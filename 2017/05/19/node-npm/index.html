@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>Node.js | npm &amp; yarn | 372 | scientific thinking</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="Node.js &amp;#xAC00; &amp;#xC6F9;&amp;#xC571; &amp;#xAC1C;&amp;#xBC1C;&amp;#xC5D0;&amp;#xC11C; &amp;#xB9CE;&amp;#xC774; &amp;#xC4F0;&amp;#xC774;&amp;#xB294; &amp;#xC774;&amp;#xC720; &amp;#xC911; &amp;#xD558;&amp;#xB098;&amp;#xAC00; &amp;#xAC80;&amp;#xC99D;&amp;#xB41C; &amp;#xBAA8;&amp;#xB4C8">
+<meta name="keywords" content="node.js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Node.js | npm &amp; yarn">
+<meta property="og:url" content="https://sc372.github.io/2017/05/19/node-npm/index.html">
+<meta property="og:site_name" content="372 | scientific thinking">
+<meta property="og:description" content="Node.js &amp;#xAC00; &amp;#xC6F9;&amp;#xC571; &amp;#xAC1C;&amp;#xBC1C;&amp;#xC5D0;&amp;#xC11C; &amp;#xB9CE;&amp;#xC774; &amp;#xC4F0;&amp;#xC774;&amp;#xB294; &amp;#xC774;&amp;#xC720; &amp;#xC911; &amp;#xD558;&amp;#xB098;&amp;#xAC00; &amp;#xAC80;&amp;#xC99D;&amp;#xB41C; &amp;#xBAA8;&amp;#xB4C8">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://sc372.github.io/2017/05/19/node-npm/npm.png">
+<meta property="og:image" content="https://sc372.github.io/2017/05/19/node-npm/yarn.png">
+<meta property="og:updated_time" content="2017-07-29T05:37:17.878Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Node.js | npm &amp; yarn">
+<meta name="twitter:description" content="Node.js &amp;#xAC00; &amp;#xC6F9;&amp;#xC571; &amp;#xAC1C;&amp;#xBC1C;&amp;#xC5D0;&amp;#xC11C; &amp;#xB9CE;&amp;#xC774; &amp;#xC4F0;&amp;#xC774;&amp;#xB294; &amp;#xC774;&amp;#xC720; &amp;#xC911; &amp;#xD558;&amp;#xB098;&amp;#xAC00; &amp;#xAC80;&amp;#xC99D;&amp;#xB41C; &amp;#xBAA8;&amp;#xB4C8">
+<meta name="twitter:image" content="https://sc372.github.io/2017/05/19/node-npm/npm.png">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "372",
+  "url": "https://sc372.github.io"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>372 | scientific thinking</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">372</a>
+                    
+                        <div class="meta">
+                            Programer / Roaster / Sienze
+                        </div>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        <div class="item">
+                            <i class="marker icon" style="float: left"></i>
+                            <div class="content">Asia/Seoul</div>
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+
+                                <a href="https://github.com/sc372"><i class="large github icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://twitter.com/lsc372"><i class="large twitter icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://about.me/sc372"><i class="large user icon" style="float: left"></i></a>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item" >
+        <i class="home icon"></i>
+        home
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/Web" class="item" >
+        <i class=" icon"></i>
+        web
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/OS" class="item" >
+        <i class=" icon"></i>
+        os
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/FunctionalProgramming" class="item" >
+        <i class=" icon"></i>
+        functional programming
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-node-npm" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+<h1 class="ui header">
+    
+    Node.js | npm &amp; yarn
+</h1>
+
+
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <p>Node.js &#xAC00; &#xC6F9;&#xC571; &#xAC1C;&#xBC1C;&#xC5D0;&#xC11C; &#xB9CE;&#xC774; &#xC4F0;&#xC774;&#xB294; &#xC774;&#xC720; &#xC911; &#xD558;&#xB098;&#xAC00; &#xAC80;&#xC99D;&#xB41C; &#xBAA8;&#xB4C8;&#xC774; &#xB9CE;&#xAE30; &#xB54C;&#xBB38;&#xC785;&#xB2C8;&#xB2E4;. &#xC571; &#xAC1C;&#xBC1C;&#xC2DC; &#xD558;&#xB098;&#xD558;&#xB098; &#xAC1C;&#xBC1C;&#xD558;&#xC9C0; &#xC54A;&#xC544;&#xB3C4; &#xC774;&#xBBF8; &#xAC80;&#xC99D;&#xB41C; &#xBAA8;&#xB4C8;&#xB4E4;&#xC744; &#xC801;&#xC6A9;&#xC2DC;&#xD0A4;&#xBA74; &#xC571;&#xAC1C;&#xBC1C;&#xC744; &#xC27D;&#xAC8C; &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB4F1;&#xB85D;&#xC218; 7&#xB9CC;&#xAC1C; &#xC774;&#xC0C1;&#xC758; &#xBAA8;&#xB4C8;&#xB4E4;&#xC744; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0;&#xC11C; &#xD6A8;&#xACFC;&#xC801;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C; &#xAD00;&#xB9AC;&#xD574;&#xC8FC;&#xB294; &#xAE30;&#xB2A5;&#xC774; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<h2 id="NPM-node-Package-modules"><a href="#NPM-node-Package-modules" class="headerlink" title="NPM(node Package modules)"></a>NPM(node Package modules)</h2><p><a class="magnific-img" href="npm.png"><img src="npm.png" alt="" class="ui centered image"></a></p>
+<p><a href="https://www.npmjs.com/" target="_blank" rel="external">NPM</a> &#xC740; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0;&#xC11C; &#xAC01; &#xBAA8;&#xB4C8;&#xB4E4;&#xC744; &#xD6A8;&#xACFC;&#xC801;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD574;&#xC11C; <a href="http://izs.me/" target="_blank" rel="external">Isaac Z. Schlueter</a> &#xAC00; &#xAC1C;&#xBC1C;&#xD55C; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>Node.js &#xB97C; &#xC124;&#xCE58;&#xD558;&#xBA74; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xAC19;&#xC774; &#xC124;&#xCE58;&#xAC00; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xC0AC;&#xC6A9;&#xBC95;"><a href="#&#xC0AC;&#xC6A9;&#xBC95;" class="headerlink" title="&#xC0AC;&#xC6A9;&#xBC95;"></a>&#xC0AC;&#xC6A9;&#xBC95;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xBC84;&#xC804;&#xD655;&#xC778;</div><div class="line">$ npm -version</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xC548;&#xB0B4;</div><div class="line">$ npm -<span class="built_in">help</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xBA85;&#xB839;&#xC5B4; &#xC548;&#xB0B4;</div><div class="line">$ npm &lt;&#xBA85;&#xB839;&#xC5B4;&gt; -h</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xBAA8;&#xB4C8; &#xC124;&#xCE58;(&#xC9C0;&#xC5ED;)</div><div class="line">$ npm install &lt;&#xBAA8;&#xB4C8;&gt;      =&gt; &#xD604;&#xC7AC; &#xB514;&#xB809;&#xD130;&#xB9AC; &#xC548;&#xC5D0; &#xC124;&#xCE58; : &#xC18C;&#xC2A4; &#xB0B4;&#xC5D0;&#xC11C; require()&#xB85C; &#xD638;&#xCD9C;&#xD560; &#xB54C; &#xC0AC;&#xC6A9;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xBAA8;&#xB4C8; &#xC124;&#xCE58;(&#xAE00;&#xB85C;&#xBC8C;)</div><div class="line">$ npm install &lt;&#xBAA8;&#xB4C8;&gt; -g   =&gt; {prefix}/lib/node_modules &#xB514;&#xB809;&#xD130;&#xB9AC; &#xC548;&#xC5D0; &#xC124;&#xCE58; : &#xD130;&#xBBF8;&#xB110;&#xC5D0;&#xC11C; &#xBAA8;&#xB4C8; &#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xC124;&#xCE58;&#xB41C; &#xBAA8;&#xB4C8; &#xB9AC;&#xC2A4;&#xD2B8;</div><div class="line">$ npm ls (-g &#xC635;&#xC158; &#xAC00;&#xB2A5;)</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xC124;&#xCE58;&#xB41C; &#xBAA8;&#xB4C8; &#xD655;&#xC778;</div><div class="line">$ npm search &lt;&#xBAA8;&#xB4C8;&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xC124;&#xCE58;&#xB41C; &#xBAA8;&#xB4C8; &#xC815;&#xBCF4; &#xD655;&#xC778;</div><div class="line">$ npm list &lt;&#xBAA8;&#xB4C8;&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xC124;&#xCE58;&#xB41C; &#xBAA8;&#xB4C8;&#xC758; &#xCD5C;&#xC2E0; &#xC815;&#xBCF4; &#xD655;&#xC778;</div><div class="line">$ npm view &lt;&#xBAA8;&#xB4C8;&gt; version</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xC124;&#xCE58;&#xB41C; &#xBAA8;&#xB4C8;&#xC758; &#xCD5C;&#xC2E0; &#xC815;&#xBCF4; &#xD655;&#xC778;</div><div class="line">$ npm view &lt;&#xBAA8;&#xB4C8;&gt; version</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xBAA8;&#xB4C8; &#xC0AD;&#xC81C;</div><div class="line">$ npm uninstall &lt;&#xBAA8;&#xB4C8;&gt;</div></pre></td></tr></table></figure>
+<h3 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h3><p><a href="https://docs.npmjs.com/files/package.json" target="_blank" rel="external">package.json</a> &#xC740; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758; &#xC815;&#xBCF4;&#xC640; &#xC758;&#xC874;&#xD558;&#xB294; &#xBAA8;&#xB4C8;&#xB4E4;&#xC758; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xC815;&#xC758; &#xD558;&#xB294; &#xD30C;&#xC77C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- package.json &#xC0DD;&#xC131;</div><div class="line">$ npm init</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xBAA8;&#xB4C8;&#xC744; package.json &#xC5D0; &#xB4F1;&#xB85D;&#xD568;&#xC73C;&#xB85C;&#xC11C; &#xBAA8;&#xB4C8; &#xC758;&#xC874; &#xC124;&#xCE58;</div><div class="line">$ npm install &lt;&#xBAA8;&#xB4C8;&gt; --save</div></pre></td></tr></table></figure>
+<p>&#xC544;&#xB798; &#xC608;&#xB294; &#xD604;&#xC7AC; &#xC774; &#xBE14;&#xB85C;&#xADF8;&#xC758; package.json &#xD30C;&#xC77C; &#xB0B4;&#xC6A9;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">{</div><div class="line">  <span class="string">&quot;name&quot;</span>: <span class="string">&quot;hexo-site&quot;</span>,  </div><div class="line">  <span class="string">&quot;version&quot;</span>: <span class="string">&quot;0.0.0&quot;</span>,   </div><div class="line">  <span class="string">&quot;private&quot;</span>: <span class="literal">true</span>,      </div><div class="line">  <span class="string">&quot;hexo&quot;</span>: {</div><div class="line">    <span class="string">&quot;version&quot;</span>: <span class="string">&quot;3.3.5&quot;</span></div><div class="line">  },</div><div class="line">  <span class="string">&quot;dependencies&quot;</span>: {     =&gt; &#xC758;&#xC874;&#xD558;&#xB294; &#xBAA8;&#xB4C8; &#xC815;&#xBCF4;</div><div class="line">    <span class="string">&quot;hexo&quot;</span>: <span class="string">&quot;^3.2.0&quot;</span>,</div><div class="line">    <span class="string">&quot;hexo-deployer-git&quot;</span>: <span class="string">&quot;^0.3.0&quot;</span>,</div><div class="line">    <span class="string">&quot;hexo-generator-archive&quot;</span>: <span class="string">&quot;^0.1.4&quot;</span>,</div><div class="line">    <span class="string">&quot;hexo-generator-category&quot;</span>: <span class="string">&quot;^0.1.3&quot;</span>,</div><div class="line">    <span class="string">&quot;hexo-generator-feed&quot;</span>: <span class="string">&quot;^1.2.0&quot;</span>,</div><div class="line">    <span class="string">&quot;hexo-generator-index&quot;</span>: <span class="string">&quot;^0.2.0&quot;</span>,</div><div class="line">    <span class="string">&quot;hexo-generator-tag&quot;</span>: <span class="string">&quot;^0.2.0&quot;</span>,</div><div class="line">    <span class="string">&quot;hexo-renderer-ejs&quot;</span>: <span class="string">&quot;^0.2.0&quot;</span>,</div><div class="line">    <span class="string">&quot;hexo-renderer-marked&quot;</span>: <span class="string">&quot;^0.2.10&quot;</span>,</div><div class="line">    <span class="string">&quot;hexo-renderer-stylus&quot;</span>: <span class="string">&quot;^0.3.1&quot;</span>,</div><div class="line">    <span class="string">&quot;hexo-server&quot;</span>: <span class="string">&quot;^0.2.0&quot;</span>,</div><div class="line">    <span class="string">&quot;hexo-tag-post-link&quot;</span>: <span class="string">&quot;^1.0.6&quot;</span></div><div class="line">  }</div><div class="line">}</div></pre></td></tr></table></figure>
+<h2 id="Yarn-A-new-package-manager-for-JavaScript"><a href="#Yarn-A-new-package-manager-for-JavaScript" class="headerlink" title="Yarn(A new package manager for JavaScript)"></a>Yarn(A new package manager for JavaScript)</h2><p><a class="magnific-img" href="yarn.png"><img src="yarn.png" alt="" class="ui centered image"></a></p>
+<p><a href="https://yarnpkg.com/lang/en/" target="_blank" rel="external">Yarn</a> &#xC740; &#xD398;&#xC774;&#xC2A4;&#xBD81;, Exponent, &#xAD6C;&#xAE00;, Tilde &#xC758; &#xC5D4;&#xC9C0;&#xB2C8;&#xC5B4;&#xB4E4;&#xC774; &#xAE30;&#xC874; npm&#xC758; &#xC774;&#xC288;&#xB4E4;&#xC744; &#xADF9;&#xBCF5;&#xD558;&#xACE0;&#xC790; &#xC0C8;&#xB86D;&#xAC8C; &#xAC1C;&#xBC1C;&#xD55C; package manager &#xC785;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">- yarn &#xC124;&#xCE58;</div><div class="line">$ sudo apt-get update</div><div class="line">$ sudo apt-get install yarn</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- yarn &#xCD08;&#xAE30;&#xD654;</div><div class="line">$ yarn init</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- yarn &#xBAA8;&#xB4C8; &#xC124;&#xCE58;</div><div class="line">$ yarn add &lt;&#xBAA8;&#xB4C8;, git remote url, tar&#xD30C;&#xC77C; &#xB4F1; &gt; (-g)    =&gt; package.json, yarn.lock &#xB458;&#xB2E4; &#xC5C5;&#xB370;&#xC774;&#xD2B8;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- yarn &#xBAA8;&#xB4C8; &#xC5C5;&#xADF8;&#xB808;&#xC774;&#xB4DC; </div><div class="line">$ yarn upgrade &lt;&#xBAA8;&#xB4C8;&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- yarn &#xBAA8;&#xB4C8; &#xC0AD;&#xC81C; </div><div class="line">$ yarn remove &lt;&#xBAA8;&#xB4C8;&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- npm =&gt; yarn &#xD328;&#xCE58; </div><div class="line">$ yarn  =&gt; &#xC704;&#xCE58;&#xD55C; &#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC758; npm &#xC5D0;&#xC11C; &#xC758;&#xC874;&#xD55C; &#xBAA8;&#xB4C8;&#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; yarn &#xB85C; &#xAC00;&#xC838;&#xC635;&#xB2C8;&#xB2E4;.</div></pre></td></tr></table></figure>
+<hr>
+<p><strong>&#xC544;&#xC9C1;&#xC740; npm &#xC774; yarn &#xBCF4;&#xB2E4; &#xC775;&#xC219;&#xD569;&#xB2C8;&#xB2E4;&#xB9CC; yarn &#xC744; &#xC870;&#xAE08;&#xC529; &#xC368;&#xBD10;&#xC57C;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</strong></p>
+
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2017-05-19T03:14:35.000Z" itemprop="datePublished">2017-05-19</time>
+
+    </span>
+    <span class="post-description-item">
+        
+
+    <span>
+        <i class="tags icon"></i>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/node-js/">node.js</a>
+    </span>
+
+    
+
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a href="/2017/05/22/haskell-start/" class="ui tiny button">
+
+                    <i class="angle left icon"></i>
+                    
+                    Haskell(하스켈) | start
+                    
+
+                </a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2017/05/18/node-nvm/" class="ui tiny button">
+                    
+                    Node.js | nvm
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#NPM-node-Package-modules"><span>NPM(node Package modules)</span></a><ol><li><a href="#사용법"><span>사용법</span></a></li><li><a href="#package-json"><span>package.json</span></a></li></ol></li><li><a href="#Yarn-A-new-package-manager-for-JavaScript"><span>Yarn(A new package manager for JavaScript)</span></a></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+<!-- disqus start -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+<!-- following code is copied form hexo theme Next, thanks a lot -->
+
+var disqus_shortname = '372s-github-page';
+var disqus_identifier = '2017/05/19/node-npm/';
+var disqus_title = 'Node.js | npm &amp; yarn';
+
+function run_disqus_script(disqus_script) {
+	var dsq = document.createElement('script');
+	dsq.type = 'text/javascript';
+	dsq.async = true;
+	dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}
+
+run_disqus_script('count.js');
+
+
+var disqus_config = function () {
+    this.page.url = disqus_url;
+    this.page.identifier = disqus_identifier;
+    this.page.title = disqus_title;
+};
+
+run_disqus_script('embed.js');
+
+
+
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+<!-- disqus end -->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2017 <a href="/">372</a>.
+        All Rights Reserved.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>

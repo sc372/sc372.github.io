@@ -1,0 +1,400 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>Haskell(하스켈) | start | 372 | scientific thinking</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="&amp;#xCD5C;&amp;#xADFC; &amp;#xAC1C;&amp;#xBC1C;&amp;#xAE30;&amp;#xC220; &amp;#xAD00;&amp;#xB828; &amp;#xBE14;&amp;#xB85C;&amp;#xADF8; &amp;#xAE00;&amp;#xC774;&amp;#xB098; &amp;#xAE30;&amp;#xC0AC;, &amp;#xD639;&amp;#xC740; &amp;#xAC8C;&amp;#xC2DC;&amp;#xD310;&amp;#xB4F1;&amp;#xC5D0;&amp;#xC11C">
+<meta name="keywords" content="haskell,functional programming,start">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Haskell(하스켈) | start">
+<meta property="og:url" content="https://sc372.github.io/2017/05/22/haskell-start/index.html">
+<meta property="og:site_name" content="372 | scientific thinking">
+<meta property="og:description" content="&amp;#xCD5C;&amp;#xADFC; &amp;#xAC1C;&amp;#xBC1C;&amp;#xAE30;&amp;#xC220; &amp;#xAD00;&amp;#xB828; &amp;#xBE14;&amp;#xB85C;&amp;#xADF8; &amp;#xAE00;&amp;#xC774;&amp;#xB098; &amp;#xAE30;&amp;#xC0AC;, &amp;#xD639;&amp;#xC740; &amp;#xAC8C;&amp;#xC2DC;&amp;#xD310;&amp;#xB4F1;&amp;#xC5D0;&amp;#xC11C">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://sc372.github.io/2017/05/22/haskell-start/functional.png">
+<meta property="og:image" content="https://sc372.github.io/2017/05/22/haskell-start/haskell.png">
+<meta property="og:updated_time" content="2017-07-29T05:37:17.866Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Haskell(하스켈) | start">
+<meta name="twitter:description" content="&amp;#xCD5C;&amp;#xADFC; &amp;#xAC1C;&amp;#xBC1C;&amp;#xAE30;&amp;#xC220; &amp;#xAD00;&amp;#xB828; &amp;#xBE14;&amp;#xB85C;&amp;#xADF8; &amp;#xAE00;&amp;#xC774;&amp;#xB098; &amp;#xAE30;&amp;#xC0AC;, &amp;#xD639;&amp;#xC740; &amp;#xAC8C;&amp;#xC2DC;&amp;#xD310;&amp;#xB4F1;&amp;#xC5D0;&amp;#xC11C">
+<meta name="twitter:image" content="https://sc372.github.io/2017/05/22/haskell-start/functional.png">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "372",
+  "url": "https://sc372.github.io"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>372 | scientific thinking</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">372</a>
+                    
+                        <div class="meta">
+                            Programer / Roaster / Sienze
+                        </div>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        <div class="item">
+                            <i class="marker icon" style="float: left"></i>
+                            <div class="content">Asia/Seoul</div>
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+
+                                <a href="https://github.com/sc372"><i class="large github icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://twitter.com/lsc372"><i class="large twitter icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://about.me/sc372"><i class="large user icon" style="float: left"></i></a>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item" >
+        <i class="home icon"></i>
+        home
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/Web" class="item" >
+        <i class=" icon"></i>
+        web
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/OS" class="item" >
+        <i class=" icon"></i>
+        os
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/FunctionalProgramming" class="item" >
+        <i class=" icon"></i>
+        functional programming
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-haskell-start" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+<h1 class="ui header">
+    
+    Haskell(하스켈) | start
+</h1>
+
+
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <p><a class="magnific-img" href="functional.png"><img src="functional.png" alt="" class="ui centered image"></a></p>
+<p>&#xCD5C;&#xADFC; &#xAC1C;&#xBC1C;&#xAE30;&#xC220; &#xAD00;&#xB828; &#xBE14;&#xB85C;&#xADF8; &#xAE00;&#xC774;&#xB098; &#xAE30;&#xC0AC;, &#xD639;&#xC740; &#xAC8C;&#xC2DC;&#xD310;&#xB4F1;&#xC5D0;&#xC11C; <a href="https://ko.wikipedia.org/wiki/%ED%95%A8%EC%88%98%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" target="_blank" rel="external">&#xD568;&#xC218;&#xD615; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;(Functional programming)</a> &#xC774;&#xB77C;&#xB294; &#xB2E8;&#xC5B4;&#xB97C; &#xC885;&#xC885; &#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. <a href="https://namu.wiki/w/Java" target="_blank" rel="external">Java</a>, <a href="https://ko.wikipedia.org/wiki/C++" target="_blank" rel="external">C++</a>, <a href="https://ko.wikipedia.org/wiki/C_%EC%83%A4%ED%94%84" target="_blank" rel="external">C#</a>, <a href="https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC" target="_blank" rel="external">Python</a>. <a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8" target="_blank" rel="external">Javascript</a> &#xB4F1; &#xD604;&#xC5C5;&#xC5D0;&#xC11C; &#xB9CE;&#xC774; &#xD65C;&#xC6A9;&#xB418;&#xACE0; &#xC788;&#xB294; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5B8;&#xC5B4;&#xB97C; &#xD559;&#xC2B5;&#xD558;&#xB294; &#xC785;&#xC7A5;&#xC5D0;&#xC11C;&#xB294; <a href="https://ko.wikipedia.org/wiki/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" target="_blank" rel="external">&#xAC1D;&#xCCB4;&#xC9C0;&#xD5A5; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;</a> &#xC774;&#xB77C;&#xB294; &#xB9D0;&#xC740; &#xC218;&#xB3C4; &#xC5C6;&#xC774; &#xBCF4;&#xACE0; &#xB4E4;&#xC5B4;&#xC654;&#xC9C0;&#xB9CC; &#x2018;&#xD568;&#xC218;&#xD615;&#x2019;&#xC774;&#xB77C;&#xB294; &#xB9D0;&#xC740; &#xC880; &#xB0AF;&#xC120; &#xB2E8;&#xC5B4;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xADF8;&#xB7FC; &#xD568;&#xC218;&#xD615; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC740; &#xC5B4;&#xB5A4; &#xC758;&#xBBF8;&#xC778;&#xC9C0; &#xAC04;&#xB2E8;&#xD558;&#xAC8C; &#xD655;&#xC778;&#xD574;&#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xD568;&#xC218;&#xD615;-&#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;-&#xD2B9;&#xC9D5;"><a href="#&#xD568;&#xC218;&#xD615;-&#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;-&#xD2B9;&#xC9D5;" class="headerlink" title="&#xD568;&#xC218;&#xD615; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xD2B9;&#xC9D5;"></a>&#xD568;&#xC218;&#xD615; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xD2B9;&#xC9D5;</h2><ul class="ui list">
+<li>&#xC21C;&#xC218;&#xD55C;(pure) &#xD568;&#xC218;&#xB97C; &#xC9C0;&#xD5A5;&#xD558;&#xBBC0;&#xB85C; &#xBD80;&#xC791;&#xC6A9;(side effect)&#xC774; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+<li>&#xBAA8;&#xB4E0; &#xAC83;&#xC740; &#xD568;&#xC218; &#xC785;&#xB2C8;&#xB2E4;.</li>
+<li>&#xC0C1;&#xD0DC;&#xAC00; &#xC5C6;&#xAC70;&#xB098;(stateless) &#xBCC0;&#xACBD; &#xBD88;&#xAC00;&#xB2A5;(immutable) &#xD558;&#xBBC0;&#xB85C; &#xB3D9;&#xC2DC;&#xC131;&#xC5D0; &#xC801;&#xD569;&#xB2C8;&#xB2E4;.</li>
+<li>&#xCF54;&#xB4DC;&#xC758; &#xC7AC;&#xC0AC;&#xC6A9;&#xC131;&#xC774; &#xC88B;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+<li>&#xAC04;&#xACB0;&#xD558;&#xAC8C; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD558;&#xAE30; &#xC88B;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<p>&#xC704;&#xC758; &#xC774;&#xC57C;&#xAE30; &#xC678;&#xC5D0; &#xC0AC;&#xB78C;&#xC758; &#xB17C;&#xB9AC;&#xC801; &#xC0AC;&#xACE0;&#xC758; &#xD750;&#xB984;&#xB300;&#xB85C; &#xCF54;&#xB529;&#xD560; &#xC218; &#xC788;&#xC5B4;&#xC11C; &#xC88B;&#xB2E4;&#xACE0; &#xD558;&#xC9C0;&#xB9CC; &#xC774;&#xAC83;&#xC740; &#xC0AC;&#xB78C;&#xB9C8;&#xB2E4; &#xB2E4;&#xB974;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xAC1D;&#xAD00;&#xC801;&#xC73C;&#xB85C; &#xC815;&#xC758;&#xD560; &#xC218;&#xB294; &#xC5C6;&#xC744; &#xAC83; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD2B9;&#xC9D5;&#xC744; &#xC801;&#xC73C;&#xB2C8; &#xC7A5;&#xC810;&#xC744; &#xC774;&#xC57C;&#xAE30; &#xD55C; &#xAC83; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;&#xB9CC;, &#xB2E4;&#xB978; &#xC758;&#xACAC;&#xB3C4; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB108;&#xBB34; &#xD568;&#xCD95;&#xC801;&#xC778; &#xD45C;&#xD604;&#xC774;&#xB77C;&#xC11C; &#xB204;&#xAD6C;&#xB098; &#xC27D;&#xAC8C; &#xCF54;&#xB4DC;&#xB97C; &#xC77D;&#xAE30; &#xC5B4;&#xB835;&#xB2E4;&#xB294; &#xC774;&#xC57C;&#xAE30;&#xC640; &#xACF5;&#xBD80;&#xD558;&#xAE30;&#xAC00; &#xC5B4;&#xB835;&#xB2E4;&#xB294; &#xC774;&#xC57C;&#xAE30;,<br>&#xC774;&#xBBF8; &#xB9CC;&#xB4E4;&#xC5B4;&#xC838; &#xC788;&#xB294; &#xB9CE;&#xC740; &#xCF54;&#xB4DC;&#xAC00; &#xAC1D;&#xCCB4;&#xC9C0;&#xD5A5;&#xC801;&#xC73C;&#xB85C; &#xC9DC;&#xC5EC;&#xC838; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xD328;&#xB7EC;&#xB2E4;&#xC784;&#xC774; &#xBC14;&#xB00C;&#xB294; &#xAC83;&#xC740; &#xC27D;&#xC9C0; &#xC54A;&#xB2E4;&#xB294; &#xC758;&#xACAC; &#xB4F1;&#xC744; &#xBCFC; &#xC218; &#xC788;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<h2 id="&#xD558;&#xC2A4;&#xCF08;-haskell"><a href="#&#xD558;&#xC2A4;&#xCF08;-haskell" class="headerlink" title="&#xD558;&#xC2A4;&#xCF08;(haskell)"></a>&#xD558;&#xC2A4;&#xCF08;(haskell)</h2><p>&#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xC5D0;&#xC11C;&#xC758; &#xD65C;&#xC6A9; &#xC5EC;&#xBD80;&#xB97C; &#xB5A0;&#xB098;&#xC11C; &#xD765;&#xBBF8;&#xAC00; &#xC0DD;&#xACA8;&#xC11C; &#xAD00;&#xB828;&#xB41C; &#xD568;&#xC218;&#xD615; &#xD328;&#xB7EC;&#xB2E4;&#xC784;&#xC5D0; &#xB300;&#xD55C; &#xACF5;&#xBD80;&#xB97C; &#xD558;&#xB294; &#xACB8;, &#xD55C; &#xC5B8;&#xC5B4; &#xC815;&#xB3C4;&#xB294; &#xC54C;&#xC544;&#xBCF4;&#xBA74; &#xC88B;&#xACA0;&#xB2E4; &#xC2F6;&#xC740; &#xB9C8;&#xC74C;&#xC774; &#xB4E4;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD568;&#xC218;&#xC9C0;&#xD5A5;&#xD615; &#xC5B8;&#xC5B4;&#xC758; &#xC885;&#xB958;&#xB294; &#xB9CE;&#xC2B5;&#xB2C8;&#xB2E4;.(<a href="https://ko.wikipedia.org/wiki/%EB%A6%AC%EC%8A%A4%ED%94%84" target="_blank" rel="external">Lisp</a>, <a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%EC%B9%BC%EB%9D%BC_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4" target="_blank" rel="external">Scala</a>), <a href="https://ko.wikipedia.org/wiki/%ED%81%B4%EB%A1%9C%EC%A0%80_(%EC%BB%B4%ED%93%A8%ED%84%B0_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" target="_blank" rel="external">Closure</a>), <a href="https://ko.wikipedia.org/wiki/%ED%95%98%EC%8A%A4%EC%BC%88" target="_blank" rel="external">Haskell</a>, <a href="https://en.wikipedia.org/wiki/Caml" target="_blank" rel="external">Caml</a>, <a href="https://ko.wikipedia.org/wiki/F_%EC%83%A4%ED%94%84" target="_blank" rel="external">F#</a>, <a href="https://ko.wikipedia.org/wiki/Elixir" target="_blank" rel="external">Elixir</a>, <a href="http://elm-lang.org/" target="_blank" rel="external">elm</a> &#x2026; ). &#xB110;&#xB9AC; &#xD65C;&#xC6A9;&#xB418;&#xC9C0;&#xB294; &#xC54A;&#xB294; &#xAC83; &#xAC19;&#xC9C0;&#xB9CC; &#xD558;&#xB098;&#xC529; &#xAC80;&#xC0C9;&#xD574;&#xBCF4;&#xBA74; &#xACBD;&#xD5D8;&#xD574;&#xBCF4;&#xC9C0; &#xBABB;&#xD574;&#xC11C; &#xB0B4;&#xAC00; &#xC798; &#xBAA8;&#xB974;&#xB294; &#xAC83;&#xC774;&#xC9C0; &#xC5ED;&#xC0AC;&#xB3C4; &#xC788;&#xACE0; &#xC560;&#xC6A9;&#xD558;&#xB294; &#xC0AC;&#xB78C;&#xB4E4;&#xB3C4; &#xB9CE;&#xB2E4;&#xB294; &#xAC83;&#xC744; &#xC54C;&#xAC8C; &#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<p>&#xADF8; &#xC911;&#xC5D0; <a href="https://www.haskell.org/" target="_blank" rel="external">Haskell</a> &#xC774;&#xB77C;&#xB294; &#xC5B8;&#xC5B4;&#xB97C; &#xD55C;&#xBC88; &#xB4E4;&#xC5EC;&#xB2E4; &#xBCF4;&#xAE30;&#xB85C; &#xACB0;&#xC815;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xAC1C;&#xC694;"><a href="#&#xAC1C;&#xC694;" class="headerlink" title="&#xAC1C;&#xC694;"></a>&#xAC1C;&#xC694;</h3><p><a class="magnific-img" href="haskell.png"><img src="haskell.png" alt="" class="ui centered image"></a></p>
+<p>1987&#xB144; Functional Programming Languages and Computer Architecture, FPCA &#x2018;87&#x2019; &#xC758; &#xD68C;&#xC758;&#xC5D0;&#xC11C; &#xCC38;&#xAC00;&#xC790;&#xC758; &#xB73B;&#xC774; &#xBAA8;&#xC5EC;&#xC11C; &#xC704;&#xC6D0;&#xD68C;&#xAC00; &#xBC1C;&#xC871;&#xD558;&#xC5EC; 1990&#xB144; &#xCCAB; &#xBC84;&#xC804;&#xC774; &#xB098;&#xC654;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD558;&#xC2A4;&#xCF08;&#xC740; &#xC21C;&#xC218;&#xD55C; &#xD568;&#xC218;&#xD615; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5B8;&#xC5B4;&#xC785;&#xB2C8;&#xB2E4;. &#xC704;&#xC5D0;&#xC11C; &#xC774;&#xC57C;&#xAE30;&#xD55C; &#xD2B9;&#xC9D5;&#xC744; &#xADF8;&#xB300;&#xB85C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<h3 id="&#xC124;&#xCE58;-install"><a href="#&#xC124;&#xCE58;-install" class="headerlink" title="&#xC124;&#xCE58;(install)"></a>&#xC124;&#xCE58;(install)</h3><p><em>(&#xC800;&#xB294; &#xB9AC;&#xB205;&#xC2A4; &#xBBFC;&#xD2B8;(&#xC6B0;&#xBD84;&#xD22C;)&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAD00;&#xACC4;&#xB85C; &#xB9AC;&#xB205;&#xC2A4; &#xD658;&#xACBD; &#xC911;&#xC2EC;&#xC73C;&#xB85C; &#xC124;&#xCE58;&#xBC29;&#xBC95;&#xC744; &#xC548;&#xB0B4;&#xD574;&#xB4DC;&#xB9AC;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC708;&#xB3C4;&#xC6B0;, MacOS&#xB294; &#xAC80;&#xC0C9;&#xD574;&#xBCF4;&#xBA74; &#xB9CE;&#xC774; &#xB098;&#xC624;&#xB2C8; &#xB2E4;&#xB978; &#xB0B4;&#xC6A9;&#xC744; &#xCC38;&#xACE0; &#xD558;&#xC2DC;&#xAE30; &#xBC14;&#xB78D;&#xB2C8;&#xB2E4;.)</em></p>
+<p>&#xD558;&#xC2A4;&#xCF08;&#xC740; &#xB2E4;&#xC591;&#xD55C; &#xBC29;&#xBC95;&#xC73C;&#xB85C; &#xC124;&#xCE58;&#xAC00; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;&#xB9CC; &#xC774;&#xBC88; &#xC548;&#xB0B4;&#xC0AC;&#xD56D;&#xC740; &#xD558;&#xC2A4;&#xCF08;&#xC758; &#xD328;&#xD0A4;&#xC9C0; &#xC2DC;&#xC2A4;&#xD15C;&#xC778; <a href="https://docs.haskellstack.org/en/stable/README/" target="_blank" rel="external">Stack</a> &#xC744; &#xD1B5;&#xD574; &#xC124;&#xCE58;&#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xD328;&#xD0A4;&#xC9C0;&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xD544;&#xC694;&#xD55C; &#xC885;&#xC18D;&#xC131;&#xC744; &#xD655;&#xBCF4; &#xD569;&#xB2C8;&#xB2E4;.</div><div class="line">$ sudo apt-get install g++ gcc libc6-dev libffi-dev libgmp-dev make xz-utils zlib1g-dev git gnupg</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xC124;&#xCE58;</div><div class="line">$ curl -sSL https://get.haskellstack.org/ | sh</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xCEF4;&#xD30C;&#xC77C;&#xB7EC; &#xB2E4;&#xC6B4;&#xB85C;&#xB4DC;</div><div class="line">$ stack setup</div></pre></td></tr></table></figure>
+<h3 id="stack-&#xC0AC;&#xC6A9;&#xBC95;"><a href="#stack-&#xC0AC;&#xC6A9;&#xBC95;" class="headerlink" title="stack &#xC0AC;&#xC6A9;&#xBC95;"></a>stack &#xC0AC;&#xC6A9;&#xBC95;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xB3C4;&#xC6C0;&#xB9D0;</div><div class="line">$ stack --<span class="built_in">help</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">- REPL</div><div class="line">$ stack ghci</div><div class="line">Configuring GHCi with the following packages: </div><div class="line">GHCi, version 8.0.2: http://www.haskell.org/ghc/  :? <span class="keyword">for</span> <span class="built_in">help</span></div><div class="line">ghci&gt;</div><div class="line"></div><div class="line"></div><div class="line">- Prelude&gt; -&gt; ghci&gt;    &#xD45C;&#xAE30; &#xBCC0;&#xACBD;</div><div class="line">$ vi ~/.ghci    &#xD30C;&#xC77C; &#xC0DD;&#xC131;</div><div class="line">:<span class="built_in">set</span> prompt <span class="string">&quot;ghci&gt;&quot;</span>  &#xB0B4;&#xC6A9; &#xCD94;&#xAC00;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xC0C8;&#xB85C;&#xC6B4; &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xB514;&#xB809;&#xD1A0;&#xB9AC; &#xC0DD;&#xC131; &#xD6C4; &#xD544;&#xC694;&#xD55C; &#xAD6C;&#xC131;&#xD30C;&#xC77C; &#xC124;&#xCE58;</div><div class="line">$ stack new &lt;&#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xC774;&#xB984;&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xBE4C;&#xB4DC;</div><div class="line">$ stack build</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xC2E4;&#xD589;&#xD30C;&#xC77C; &#xC124;&#xCE58;</div><div class="line">$ stack install &lt;package-name&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">- &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xC2E4;&#xD589;</div><div class="line">$ stack <span class="built_in">exec</span> &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xC774;&#xB984;-exe</div></pre></td></tr></table></figure>
+<ul class="ui list">
+<li>&#xCC38;&#xACE0; : <a href="https://www.haskell.org/downloads" target="_blank" rel="external">&#xD558;&#xC2A4;&#xCF08; &#xC124;&#xCE58; &#xACF5;&#xC2DD; &#xBB38;&#xC11C;</a></li>
+</ul>
+<hr>
+<p><strong>&#xC2E4;&#xBB34;&#xC5D0; &#xD544;&#xC694;&#xD55C; &#xAC1D;&#xCCB4;&#xC9C0;&#xD5A5;&#xC744; &#xC774;&#xD574;&#xD558;&#xBA70; &#xACF5;&#xBD80;&#xD558;&#xB294; &#xAC83;&#xB3C4; &#xB9CC;&#xB9CC;&#xCE58; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;&#xB9CC; &#xD638;&#xAE30;&#xC2EC;&#xC744; &#xAC00;&#xC9C0;&#xACE0; &#xD2C8; &#xB0A0;&#xB54C;&#xB9C8;&#xB2E4; &#xC870;&#xAE08;&#xC529; &#xD558;&#xB294; &#xD559;&#xC2B5;&#xC740; &#xC7AC;&#xBBF8;&#xAC00; &#xC788;&#xB124;&#xC694;. &#xC790;&#xB8CC;&#xAC00; &#xB9CE;&#xC774; &#xC788;&#xC9C0; &#xC54A;&#xC544;&#xC11C; &#xACF5;&#xC2DD; &#xBB38;&#xC11C;&#xB97C; &#xCC38;&#xACE0;&#xB85C; &#xC791;&#xC131;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD639;&#xC2DC; &#xD2C0;&#xB9B0; &#xBD80;&#xBD84;&#xC774; &#xC788;&#xC73C;&#xBA74; &#xB313;&#xAE00; &#xB2EC;&#xC544;&#xC8FC;&#xC2DC;&#xBA74; &#xAC10;&#xC0AC;&#xB4DC;&#xB824;&#xC694;.</strong>        </p>
+
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2017-05-22T05:14:19.000Z" itemprop="datePublished">2017-05-22</time>
+
+    </span>
+    <span class="post-description-item">
+        
+
+    <span>
+        <i class="tags icon"></i>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/haskell/">haskell</a>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/functional-programming/">functional programming</a>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/start/">start</a>
+    </span>
+
+    
+
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a href="/2017/05/23/haskell-basic/" class="ui tiny button">
+
+                    <i class="angle left icon"></i>
+                    
+                    Haskell(하스켈) | basic
+                    
+
+                </a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2017/05/19/node-npm/" class="ui tiny button">
+                    
+                    Node.js | npm &amp; yarn
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#함수형-프로그래밍-특징"><span>함수형 프로그래밍 특징</span></a></li><li><a href="#하스켈-haskell"><span>하스켈(haskell)</span></a><ol><li><a href="#개요"><span>개요</span></a></li><li><a href="#설치-install"><span>설치(install)</span></a></li><li><a href="#stack-사용법"><span>stack 사용법</span></a></li></ol></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+<!-- disqus start -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+<!-- following code is copied form hexo theme Next, thanks a lot -->
+
+var disqus_shortname = '372s-github-page';
+var disqus_identifier = '2017/05/22/haskell-start/';
+var disqus_title = 'Haskell(하스켈) | start';
+
+function run_disqus_script(disqus_script) {
+	var dsq = document.createElement('script');
+	dsq.type = 'text/javascript';
+	dsq.async = true;
+	dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}
+
+run_disqus_script('count.js');
+
+
+var disqus_config = function () {
+    this.page.url = disqus_url;
+    this.page.identifier = disqus_identifier;
+    this.page.title = disqus_title;
+};
+
+run_disqus_script('embed.js');
+
+
+
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+<!-- disqus end -->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2017 <a href="/">372</a>.
+        All Rights Reserved.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>

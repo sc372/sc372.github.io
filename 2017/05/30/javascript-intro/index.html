@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>Javascript | intro | 372 | scientific thinking</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="&amp;#xAC1C;&amp;#xC694; Javascript &amp;#xB294; &amp;#xC6F9;&amp;#xBE0C;&amp;#xB77C;&amp;#xC6B0;&amp;#xC800; &amp;#xD639;&amp;#xC740; &amp;#xC6F9;&amp;#xAE30;&amp;#xC220; &amp;#xAE30;&amp;#xBC18; &amp;#xC560;&amp;#xD50C;&amp;#xB9AC;&amp;#xCF00;&amp;#xC774;&amp;#xC158;&amp;#xC5D0;&amp;#xC11C">
+<meta name="keywords" content="web,javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Javascript | intro">
+<meta property="og:url" content="https://sc372.github.io/2017/05/30/javascript-intro/index.html">
+<meta property="og:site_name" content="372 | scientific thinking">
+<meta property="og:description" content="&amp;#xAC1C;&amp;#xC694; Javascript &amp;#xB294; &amp;#xC6F9;&amp;#xBE0C;&amp;#xB77C;&amp;#xC6B0;&amp;#xC800; &amp;#xD639;&amp;#xC740; &amp;#xC6F9;&amp;#xAE30;&amp;#xC220; &amp;#xAE30;&amp;#xBC18; &amp;#xC560;&amp;#xD50C;&amp;#xB9AC;&amp;#xCF00;&amp;#xC774;&amp;#xC158;&amp;#xC5D0;&amp;#xC11C">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://sc372.github.io/2017/05/30/javascript-intro/javascript.png">
+<meta property="og:image" content="https://sc372.github.io/2017/05/30/javascript-intro/ecmascript.png">
+<meta property="og:updated_time" content="2017-07-29T05:37:17.870Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Javascript | intro">
+<meta name="twitter:description" content="&amp;#xAC1C;&amp;#xC694; Javascript &amp;#xB294; &amp;#xC6F9;&amp;#xBE0C;&amp;#xB77C;&amp;#xC6B0;&amp;#xC800; &amp;#xD639;&amp;#xC740; &amp;#xC6F9;&amp;#xAE30;&amp;#xC220; &amp;#xAE30;&amp;#xBC18; &amp;#xC560;&amp;#xD50C;&amp;#xB9AC;&amp;#xCF00;&amp;#xC774;&amp;#xC158;&amp;#xC5D0;&amp;#xC11C">
+<meta name="twitter:image" content="https://sc372.github.io/2017/05/30/javascript-intro/javascript.png">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "372",
+  "url": "https://sc372.github.io"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>372 | scientific thinking</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">372</a>
+                    
+                        <div class="meta">
+                            Programer / Roaster / Sienze
+                        </div>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        <div class="item">
+                            <i class="marker icon" style="float: left"></i>
+                            <div class="content">Asia/Seoul</div>
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+
+                                <a href="https://github.com/sc372"><i class="large github icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://twitter.com/lsc372"><i class="large twitter icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://about.me/sc372"><i class="large user icon" style="float: left"></i></a>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item" >
+        <i class="home icon"></i>
+        home
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/Web" class="item" >
+        <i class=" icon"></i>
+        web
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/OS" class="item" >
+        <i class=" icon"></i>
+        os
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/FunctionalProgramming" class="item" >
+        <i class=" icon"></i>
+        functional programming
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-javascript-intro" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+<h1 class="ui header">
+    
+    Javascript | intro
+</h1>
+
+
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <h2 id="&#xAC1C;&#xC694;"><a href="#&#xAC1C;&#xC694;" class="headerlink" title="&#xAC1C;&#xC694;"></a>&#xAC1C;&#xC694;</h2><p><a class="magnific-img" href="javascript.png"><img src="javascript.png" alt="" class="ui centered image"></a></p>
+<p><a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8" target="_blank" rel="external">Javascript</a> &#xB294; &#xC6F9;&#xBE0C;&#xB77C;&#xC6B0;&#xC800; &#xD639;&#xC740; &#xC6F9;&#xAE30;&#xC220; &#xAE30;&#xBC18; &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC5D0;&#xC11C; &#xB3D9;&#xC791;&#xD558;&#xB294; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC5B8;&#xC5B4; &#xC785;&#xB2C8;&#xB2E4;. &#xC6F9;&#xC774;&#xB77C;&#xB294; &#xD658;&#xACBD;&#xC758; &#xD2B9;&#xC9D5;(&#xD06C;&#xB85C;&#xC2A4;&#xD50C;&#xB7AB;&#xD3FC;, &#xC778;&#xD130;&#xB137; &#xC811;&#xC18D; &#xC6A9;&#xC774;)&#xACFC; &#xCD5C;&#xADFC; &#xC6F9;&#xAE30;&#xC220;&#xC758; &#xBC1C;&#xC804;&#xC73C;&#xB85C; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB97C; &#xBC97;&#xC5B4;&#xB098; &#xB2E4;&#xC591;&#xD558;&#xAC8C; &#xC751;&#xC6A9;&#xB418;&#xC5B4; &#xD65C;&#xC6A9;&#xB428;&#xC73C;&#xB85C; &#xC778;&#xD574;&#xC11C; Javascript &#xC758; &#xC778;&#xAE30;&#xB294; &#xD3ED;&#xBC1C;&#xC801;&#xC73C;&#xB85C; &#xC62C;&#xB77C;&#xAC14;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xC5ED;&#xC0AC;"><a href="#&#xC5ED;&#xC0AC;" class="headerlink" title="&#xC5ED;&#xC0AC;"></a>&#xC5ED;&#xC0AC;</h2><p>&#xB137;&#xC2A4;&#xCF00;&#xC774;&#xD504;(&#xD604; &#xBAA8;&#xC9C8;&#xB77C; &#xC7AC;&#xB2E8;)&#xC758; &#xB124;&#xC774;&#xAC8C;&#xC774;&#xD130;&#xAC00; &#xC6F9;&#xBE0C;&#xB77C;&#xC6B0;&#xC800; &#xC2DC;&#xC7A5;&#xC744; &#xC8FC;&#xB3C4;&#xD558;&#xACE0; &#xC788;&#xC744; &#xB54C;, <a href="https://ko.wikipedia.org/wiki/%EB%B8%8C%EB%A0%8C%EB%8D%98_%EC%95%84%EC%9D%B4%ED%81%AC" target="_blank" rel="external">&#xBE0C;&#xB80C;&#xB358; &#xC544;&#xC774;&#xD06C;</a> &#xB77C;&#xB294; &#xC0AC;&#xB78C;&#xC5D0; &#xC758;&#xD574;&#xC11C; 1995&#xB144; 12&#xC6D4;&#xC5D0; &#xBC1C;&#xD45C;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;. 10&#xC77C;&#xB9CC;&#xC5D0; &#xC5B8;&#xC5B4;&#xB97C; &#xB9CC;&#xB4E0;&#xAC83;&#xC73C;&#xB85C; &#xC720;&#xBA85;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC774;&#xB984;&#xC740; &#xBE44;&#xC2B7;&#xD558;&#xC9C0;&#xB9CC; Java &#xC5B8;&#xC5B4;&#xC640;&#xB294; &#xC644;&#xC804;&#xD788; &#xB2E4;&#xB978; &#xC5B8;&#xC5B4;&#xC785;&#xB2C8;&#xB2E4;&#xB9CC; &#xC601;&#xD5A5;&#xC744; &#xBC1B;&#xAE30;&#xB294; &#xD588;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC74C;&#xC740; &#xC601;&#xD5A5;&#xC744; &#xBC1B;&#xC740; &#xC5B8;&#xC5B4;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<ul class="ui list">
+<li>Java :  &#xAE30;&#xBCF8; &#xBB38;&#xBC95;</li>
+<li>Scheme : 1&#xAE09; &#xD568;&#xC218;(first-class function) &#xAC1C;&#xB150; -&gt; &#xD568;&#xC218;&#xC758; &#xC778;&#xC790; / &#xBC18;&#xD658;&#xAC12;&#xC73C;&#xB85C; &#xB2E4;&#xB978; &#xD568;&#xC218;&#xC5D0; &#xC0AC;&#xC6A9;</li>
+<li>Self : prototype &#xAE30;&#xBC18;&#xC758; &#xC0C1;&#xC18D; &#xAC1C;&#xB150;</li>
+</ul>
+<h2 id="&#xC8FC;&#xC694;-&#xBCC0;&#xD654;-&#xACFC;&#xC815;"><a href="#&#xC8FC;&#xC694;-&#xBCC0;&#xD654;-&#xACFC;&#xC815;" class="headerlink" title="&#xC8FC;&#xC694; &#xBCC0;&#xD654; &#xACFC;&#xC815;"></a>&#xC8FC;&#xC694; &#xBCC0;&#xD654; &#xACFC;&#xC815;</h2><p><em>&#xB2E4;&#xC74C; &#xB0B4;&#xC6A9;&#xC740; <a href="http://supmtioujda.ma/wp-content/uploads/2014/04/past-present-and-future-of-javascript.pdf" target="_blank" rel="external">The Past, Present, and Future of JavaScript</a> &#xC5D0;&#xC11C; &#xBC1C;&#xCDCC;&#xD55C; &#xB0B4;&#xC6A9; &#xC785;&#xB2C8;&#xB2E4;.</em></p>
+<p>1997 -&gt; <strong>&#xB3D9;&#xC801;&#xC778; HTML</strong> : &#xBB38;&#xC11C;&#xAC1D;&#xCCB4;&#xBAA8;&#xB378;(DOM)&#xC744; &#xC774;&#xC6A9;&#xD574; &#xB0B4;&#xC6A9;&#xACFC; &#xB514;&#xC790;&#xC778;&#xC744; &#xBCC0;&#xD654;&#xC2DC;&#xD0A4;&#xAC70;&#xB098; &#xC694;&#xC18C;&#xB97C; &#xBCF4;&#xC5EC;&#xC8FC;&#xB294; &#xAC83; &#xB4F1;<br>1999 -&gt; <strong>XMLHttpRequest</strong> : &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8; &#xCE21; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB97C; HTTP(HTTPS) &#xC11C;&#xBC84;&#xC5D0;&#xAC8C; &#xC694;&#xCCAD;&#xD558;&#xACE0; &#xD14D;&#xC2A4;&#xD2B8; &#xD615;&#xC2DD;(xml, json, html &#xB4F1;)&#xC73C;&#xB85C; &#xB370;&#xC774;&#xD130;&#xB97C; &#xBC1B;&#xB294; &#xAC83;<br>2001 -&gt; <strong>JSON</strong> : &#xB354;&#xAE00;&#xB77C;&#xC2A4; &#xD06C;&#xB77D;&#xD3EC;&#xD2B8;&#xB294; &#xD14D;&#xC2A4;&#xD2B8; &#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xB370;&#xC774;&#xD130;&#xB97C; &#xC800;&#xC7A5;&#xD558;&#xB294; &#xBB38;&#xBC95;&#xC744; &#xB9CC;&#xB4EC;<br>2004 -&gt; <strong>Dojo Toolkit</strong> : &#xD070; &#xADDC;&#xBAA8;&#xC758; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC5D0; &#xD65C;&#xC6A9;&#xD558;&#xAE30; &#xC704;&#xD568; (&#xC0C1;&#xC18D; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;, &#xBAA8;&#xB4C8;&#xC2DC;&#xC2A4;&#xD15C;, &#xADF8;&#xB798;&#xD53D; &#xC704;&#xC82F; &#xB4F1;&#xC5D0; &#xD65C;&#xC6A9;)<br>2005 -&gt; <strong>Ajax</strong> : &#xC6F9;&#xD398;&#xC774;&#xC9C0;&#xB4E4; &#xAC04; &#xC0C1;&#xD638; &#xC791;&#xC6A9;&#xC744; &#xD558;&#xAE30;&#xC704;&#xD55C; &#xAE30;&#xC220;&#xB4E4;&#xC758; &#xBAA8;&#xC784; -&gt; Google Maps&#xAC00; &#xC18C;&#xAC1C;&#xB428;<br>2005 -&gt; <strong>Apache CouchDB</strong> : noSQL&#xB85C;&#xC11C; JSON &#xB370;&#xC774;&#xD130;&#xBCA0;&#xC774;&#xC2A4;(MongoDB, Redis &#xB4F1;)<br>2006 -&gt; <strong>jQuery</strong> : DOM &#xCEE8;&#xD2B8;&#xB864;&#xC744; &#xC27D;&#xAC8C;&#xD574;&#xC8FC;&#xB294; &#xB3C4;&#xAD6C;<br>2007 -&gt; <strong>WebKit</strong> : &#xBAA8;&#xBC14;&#xC77C; &#xC6F9;&#xC758; &#xAE30;&#xCD08;&#xB85C;&#xC11C; &#xC548;&#xB4DC;&#xB85C;&#xC774;&#xB4DC;&#xC758; &#xBA54;&#xC778; &#xC5D4;&#xC9C4;&#xC774;&#xBA70; IOS&#xC758; &#xC720;&#xC77C;&#xD55C; &#xC5D4;&#xC9C4;<br>2008 -&gt; <strong>V8</strong> : &#xAD6C;&#xAE00;&#xC758; &#xD06C;&#xB86C; &#xC6F9;&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xC5D0; &#xC7A5;&#xCC29;&#xB418;&#xC5B4; &#xAE30;&#xC874; &#xC5D4;&#xC9C4;&#xBCF4;&#xB2E4; &#xC6D4;&#xB4F1;&#xD788; &#xC131;&#xB2A5;&#xC774; &#xC88B;&#xC544;&#xC9C4; &#xC5D4;&#xC9C4;<br>2009 -&gt; <strong>Node.js</strong> : &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8;&#xCE21;&#xC5D0;&#xC11C;&#xB9CC; &#xC0AC;&#xC6A9;&#xB418;&#xC5C8;&#xB358; &#xAE30;&#xC220;&#xC774; &#xC11C;&#xBC84;&#xCE21;&#xC5D0;&#xC11C;&#xB3C4; &#xC0AC;&#xC6A9;&#xC774; &#xAC00;&#xB2A5;&#xD574;&#xC9D0;                                              </p>
+<h2 id="ECMAScript"><a href="#ECMAScript" class="headerlink" title="ECMAScript"></a>ECMAScript</h2><p><a class="magnific-img" href="ecmascript.png"><img src="ecmascript.png" alt="" class="ui centered image"></a></p>
+<p>&#xB137;&#xC2A4;&#xCF00;&#xC774;&#xD504;&#xC758; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC758; &#xC131;&#xACF5;&#xC740; MS&#xC0AC;&#xC758; IE(ver 3.0)&#xC5D0;&#xC11C; Jscript &#xB77C;&#xB294; &#xC774;&#xB984;&#xC73C;&#xB85C; &#xAE30;&#xBCF8; &#xD3EC;&#xD568;&#xB418;&#xC5B4; &#xCD9C;&#xC2DC;&#xB418;&#xB294; &#xACC4;&#xAE30;&#xAC00; &#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB137;&#xC2A4;&#xCF00;&#xC774;&#xD504;&#xB294; &#xC774;&#xB97C; &#xD45C;&#xC900;&#xD654;&#xD558;&#xAE30; &#xC704;&#xD574; <a href="https://ko.wikipedia.org/wiki/Ecma_%EC%9D%B8%ED%84%B0%EB%82%B4%EC%85%94%EB%84%90" target="_blank" rel="external">Ecma International</a> &#xC5D0; &#xC694;&#xCCAD;&#xD558;&#xC600;&#xC2B5;&#xB2C8;&#xB2E4;. 1996&#xB144; 11&#xC6D4; &#xBD80;&#xD130; ECMA-262 &#xB77C;&#xACE0; &#xBD88;&#xB9AC;&#xB294; &#xBA85;&#xC138; &#xC791;&#xC5C5;&#xC744; &#xC2DC;&#xC791;&#xD558;&#xC600;&#xACE0; 1997&#xB144; 7&#xC6D4;&#xC5D0; <a href="https://ko.wikipedia.org/wiki/ECMA%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8" target="_blank" rel="external">ECMAScript</a> &#xAC00; &#xC644;&#xC131; &#xB418;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. </p>
+<p>&#xD604;&#xC7AC;&#xC5D0;&#xB294; ECMAScript 5 &#xAC00; &#xAC00;&#xC7A5; &#xB9CE;&#xC740; &#xBE0C;&#xB77C;&#xC6B0;&#xC800; &#xD638;&#xD658;&#xC131;&#xC744; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xACE0; ECMAScript 7(2016) &#xCD5C;&#xC2E0;&#xBC84;&#xC804;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<ul class="ui list">
+<li><a href="http://kangax.github.io/compat-table/es6/" target="_blank" rel="external">&#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xBCC4; &#xD638;&#xD658;&#xC131;</a></li>
+</ul>
+<p><strong>&#xACF5;&#xC2DD; &#xD648;&#xD398;&#xC774;&#xC9C0;</strong></p>
+<ul class="ui list">
+<li><a href="https://www.ecma-international.org/default.htm" target="_blank" rel="external">ECMA Interantional</a></li>
+<li><a href="http://www.ecmascript.org/" target="_blank" rel="external">ECMAScript</a></li>
+<li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript" target="_blank" rel="external">MDN Javascript</a></li>
+</ul>
+<hr>
+<p><strong>&#xC6F9; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC758; &#xAE30;&#xBCF8;&#xC740; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC785;&#xB2C8;&#xB2E4;. &#xC26C;&#xC6CC;&#xBCF4;&#xC774;&#xB294; &#xBB38;&#xBC95;&#xACFC;&#xB294; &#xB2E4;&#xB974;&#xAC8C; &#xB9E4;&#xC6B0; &#xC790;&#xC720;&#xB86D;&#xAC8C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xAE4A;&#xC774; &#xB4E4;&#xC5B4;&#xAC00;&#xBA74; &#xAC08;&#xC218;&#xB85D; &#xC810;&#xC810; &#xC5B4;&#xB835;&#xB2E4;&#xB294; &#xC774;&#xC57C;&#xAE30;&#xB97C; &#xC790;&#xC8FC; &#xB4E3;&#xC2B5;&#xB2C8;&#xB2E4;. &#xAFB8;&#xC900;&#xD788; &#xD559;&#xC2B5;&#xD574;&#xC57C; &#xACA0;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;&#xD569;&#xB2C8;&#xB2E4;.</strong></p>
+
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2017-05-30T08:51:30.000Z" itemprop="datePublished">2017-05-30</time>
+
+    </span>
+    <span class="post-description-item">
+        
+
+    <span>
+        <i class="tags icon"></i>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/web/">web</a>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/javascript/">javascript</a>
+    </span>
+
+    
+
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a href="/2017/05/31/javascript-basic/" class="ui tiny button">
+
+                    <i class="angle left icon"></i>
+                    
+                    Javascript | basic
+                    
+
+                </a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2017/05/30/http-basic/" class="ui tiny button">
+                    
+                    HTTP | intro
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#개요"><span>개요</span></a></li><li><a href="#역사"><span>역사</span></a></li><li><a href="#주요-변화-과정"><span>주요 변화 과정</span></a></li><li><a href="#ECMAScript"><span>ECMAScript</span></a></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+<!-- disqus start -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+<!-- following code is copied form hexo theme Next, thanks a lot -->
+
+var disqus_shortname = '372s-github-page';
+var disqus_identifier = '2017/05/30/javascript-intro/';
+var disqus_title = 'Javascript | intro';
+
+function run_disqus_script(disqus_script) {
+	var dsq = document.createElement('script');
+	dsq.type = 'text/javascript';
+	dsq.async = true;
+	dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}
+
+run_disqus_script('count.js');
+
+
+var disqus_config = function () {
+    this.page.url = disqus_url;
+    this.page.identifier = disqus_identifier;
+    this.page.title = disqus_title;
+};
+
+run_disqus_script('embed.js');
+
+
+
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+<!-- disqus end -->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2017 <a href="/">372</a>.
+        All Rights Reserved.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>

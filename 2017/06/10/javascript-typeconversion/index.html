@@ -1,0 +1,372 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>Javascript | typeconversion(형 변환) | 372 | scientific thinking</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="&amp;#xC790;&amp;#xBC14;&amp;#xC2A4;&amp;#xD06C;&amp;#xB9BD;&amp;#xD2B8;&amp;#xB85C; &amp;#xCF54;&amp;#xB4DC;&amp;#xB97C; &amp;#xC791;&amp;#xC131;&amp;#xD558;&amp;#xB2E4; &amp;#xBCF4;&amp;#xBA74; &amp;#xD544;&amp;#xC694;&amp;#xC5D0; &amp;#xB530;&amp;#xB77C;&amp;#xC11C; &amp;#xD0C0;&amp;#xC785;&amp;#">
+<meta name="keywords" content="web,javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Javascript | typeconversion(형 변환)">
+<meta property="og:url" content="https://sc372.github.io/2017/06/10/javascript-typeconversion/index.html">
+<meta property="og:site_name" content="372 | scientific thinking">
+<meta property="og:description" content="&amp;#xC790;&amp;#xBC14;&amp;#xC2A4;&amp;#xD06C;&amp;#xB9BD;&amp;#xD2B8;&amp;#xB85C; &amp;#xCF54;&amp;#xB4DC;&amp;#xB97C; &amp;#xC791;&amp;#xC131;&amp;#xD558;&amp;#xB2E4; &amp;#xBCF4;&amp;#xBA74; &amp;#xD544;&amp;#xC694;&amp;#xC5D0; &amp;#xB530;&amp;#xB77C;&amp;#xC11C; &amp;#xD0C0;&amp;#xC785;&amp;#">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-07-29T05:37:17.870Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Javascript | typeconversion(형 변환)">
+<meta name="twitter:description" content="&amp;#xC790;&amp;#xBC14;&amp;#xC2A4;&amp;#xD06C;&amp;#xB9BD;&amp;#xD2B8;&amp;#xB85C; &amp;#xCF54;&amp;#xB4DC;&amp;#xB97C; &amp;#xC791;&amp;#xC131;&amp;#xD558;&amp;#xB2E4; &amp;#xBCF4;&amp;#xBA74; &amp;#xD544;&amp;#xC694;&amp;#xC5D0; &amp;#xB530;&amp;#xB77C;&amp;#xC11C; &amp;#xD0C0;&amp;#xC785;&amp;#">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "372",
+  "url": "https://sc372.github.io"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>372 | scientific thinking</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">372</a>
+                    
+                        <div class="meta">
+                            Programer / Roaster / Sienze
+                        </div>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        <div class="item">
+                            <i class="marker icon" style="float: left"></i>
+                            <div class="content">Asia/Seoul</div>
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+
+                                <a href="https://github.com/sc372"><i class="large github icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://twitter.com/lsc372"><i class="large twitter icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://about.me/sc372"><i class="large user icon" style="float: left"></i></a>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item" >
+        <i class="home icon"></i>
+        home
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/Web" class="item" >
+        <i class=" icon"></i>
+        web
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/OS" class="item" >
+        <i class=" icon"></i>
+        os
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/FunctionalProgramming" class="item" >
+        <i class=" icon"></i>
+        functional programming
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-javascript-typeconversion" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+<h1 class="ui header">
+    
+    Javascript | typeconversion(형 변환)
+</h1>
+
+
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <p>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB85C; &#xCF54;&#xB4DC;&#xB97C; &#xC791;&#xC131;&#xD558;&#xB2E4; &#xBCF4;&#xBA74; &#xD544;&#xC694;&#xC5D0; &#xB530;&#xB77C;&#xC11C; &#xD0C0;&#xC785;&#xC774; &#xBCC0;&#xD658; &#xB418;&#xC5B4;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xC554;&#xC2DC;&#xC801;-&#xD615;-&#xBCC0;&#xD658;"><a href="#&#xC554;&#xC2DC;&#xC801;-&#xD615;-&#xBCC0;&#xD658;" class="headerlink" title="&#xC554;&#xC2DC;&#xC801; &#xD615; &#xBCC0;&#xD658;"></a>&#xC554;&#xC2DC;&#xC801; &#xD615; &#xBCC0;&#xD658;</h2><p>&#xD615;&#xBCC0;&#xD658;&#xC774; &#xD544;&#xC694;&#xD560; &#xB54C; &#xD615;&#xBCC0;&#xD658;&#xC744; &#xC704;&#xD55C; &#xCF54;&#xB4DC;&#xB97C; &#xC785;&#xB825;&#xD558;&#xAC70;&#xB098; &#xD45C;&#xAE30; &#xD558;&#xC9C0; &#xC54A;&#xC544;&#xB3C4; &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xC5D4;&#xC9C4;&#xC774; &#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xD615; &#xBCC0;&#xD658;&#xC744; &#xD574;&#xC90D;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">3 + &quot;72&quot;    // 75</div><div class="line">&quot;3&quot; + 72    // 75</div><div class="line">&quot;3&quot; * &quot;7&quot;   // 21</div><div class="line">3 + &quot;&#xCE58;&#xB9AC;&quot;   // 3&#xCE58;&#xB9AC;</div><div class="line">true + 10   // 21 =&gt; true(1), false(0) &#xC73C;&#xB85C; &#xBCC0;&#xD658; &#xB429;&#xB2C8;&#xB2E4;.</div><div class="line">true &lt; false // false</div><div class="line">&quot;&quot; + 10     // 10 =&gt; &quot;&quot;&#xB294; 0&#xC73C;&#xB85C; &#xBCC0;&#xD658; &#xB429;&#xB2C8;&#xB2E4;.</div><div class="line">true + &quot; or false&quot; // true or false</div><div class="line"></div><div class="line"></div><div class="line">var num = 10 - &apos;&#xC0BC;&apos;; // NaN(No a Number) &#xB9AC;&#xD134; &#xD569;&#xB2C8;&#xB2E4;.</div><div class="line">num + &quot;&#xCE58;&#xB9AC;&quot;  // NaN&#xCE58;&#xB9AC; =&gt; NaN&#xC740; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xCC98;&#xB9AC; &#xB429;&#xB2C8;&#xB2E4;.</div></pre></td></tr></table></figure>
+<p>null / undefined &#xB294; &#xBCC0;&#xD658;&#xC774; &#xB418;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xBA85;&#xC2DC;&#xC801;-&#xD615;-&#xBCC0;&#xD658;"><a href="#&#xBA85;&#xC2DC;&#xC801;-&#xD615;-&#xBCC0;&#xD658;" class="headerlink" title="&#xBA85;&#xC2DC;&#xC801; &#xD615; &#xBCC0;&#xD658;"></a>&#xBA85;&#xC2DC;&#xC801; &#xD615; &#xBCC0;&#xD658;</h2><p>&#xCF54;&#xB4DC; &#xAC00;&#xB3C5;&#xC131;&#xC740; &#xC720;&#xC9C0; &#xBCF4;&#xC218;&#xC758; &#xC6A9;&#xC774;&#xC640; &#xBE44;&#xB840;&#xD569;&#xB2C8;&#xB2E4;. &#xBA85;&#xC2DC;&#xC801;&#xC73C;&#xB85C; &#xD615; &#xBCC0;&#xD658;&#xC744; &#xD45C;&#xC2DC; &#xD560; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xCF54;&#xB4DC;&#xC758; &#xAC00;&#xB3C5;&#xC131;&#xC774; &#xB192;&#xC544;&#xC9C0;&#xAE30;&#xC5D0; &#xD615; &#xBCC0;&#xD658;&#xC740; &#xBA85;&#xC2DC;&#xD558;&#xB294; &#xAC83;&#xC740; &#xC720;&#xC9C0;&#xBCF4;&#xC218;&#xC5D0; &#xC6A9;&#xC774;&#xD558;&#xB2E4;&#xACE0; &#xBCFC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><code>Number(), String(), Boolean(), Object()</code> &#xB97C; &#xD65C;&#xC6A9;&#xD558;&#xC5EC; &#xD615; &#xBCC0;&#xD658;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">Number(&quot;372&quot;)   // 372</div><div class="line">String(true)    // true</div><div class="line">Boolean(0)      // false</div><div class="line"></div><div class="line">Object(372)     // Number {[[PrimitiveValue]]: 372}</div><div class="line">Object(true)    // Boolean {[[PrimitiveValue]]: true}</div><div class="line">Object(&quot;372&quot;)   // String {0: &quot;3&quot;, 1: &quot;7&quot;, 2: &quot;2&quot;, length: 3, [[PrimitiveValue]]: &quot;372&quot;}</div></pre></td></tr></table></figure>
+<h3 id="&#xBB38;&#xC790;&#xC640;-&#xC22B;&#xC790;-&#xC815;&#xC218;-&#xC2E4;&#xC218;-&#xC758;-&#xD615;-&#xBCC0;&#xD658;"><a href="#&#xBB38;&#xC790;&#xC640;-&#xC22B;&#xC790;-&#xC815;&#xC218;-&#xC2E4;&#xC218;-&#xC758;-&#xD615;-&#xBCC0;&#xD658;" class="headerlink" title="&#xBB38;&#xC790;&#xC640; &#xC22B;&#xC790;(&#xC815;&#xC218;, &#xC2E4;&#xC218;)&#xC758; &#xD615; &#xBCC0;&#xD658;"></a>&#xBB38;&#xC790;&#xC640; &#xC22B;&#xC790;(&#xC815;&#xC218;, &#xC2E4;&#xC218;)&#xC758; &#xD615; &#xBCC0;&#xD658;</h3><p><code>parseInt(string,radix), parseFloat(string)</code> &#xB97C; &#xD65C;&#xC6A9;&#xD558;&#xBA74; &#xB429;&#xB2C8;&#xB2E4;. <code>radix(&#xAE30;&#xC218;)</code> &#xB294; &#xD615; &#xBCC0;&#xD658;&#xC2DC;&#xC758; &#xC9C0;&#xC218;(2~36 &#xC9C4;&#xC218; &#xAC00;&#xB2A5;) &#xC785;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">parseInt(&quot;372&#xC785;&#xB2C8;&#xB2E4;&quot;);     // 372</div><div class="line">parseInt(372.72);        // 372</div><div class="line">parseInt(&quot;$372&quot;);        // NaN =&gt; &#xCCAB; &#xBB38;&#xC790;&#xAC00; &#xC22B;&#xC790;&#xAC00; &#xC544;&#xB2D0; &#xACBD;&#xC6B0;</div><div class="line">parseInt(0.372);         // 0</div><div class="line">parseInt(.372);          // 0</div><div class="line">parseInt(0372);          // 250 =&gt; 0&#xC73C;&#xB85C; &#xC2DC;&#xC791;&#xD558;&#xB294; &#xC22B;&#xC790;&#xB294; 8&#xC9C4;&#xC218;&#xB85C; &#xC778;&#xC2DD;</div><div class="line">parseInt(372, 8);        // 250</div><div class="line">parseInt(372, 10);       // 372</div><div class="line">parseInt(372, 16);       // 882</div><div class="line"></div><div class="line">parseFloat(&quot;372.72&quot;);      // 372.72</div><div class="line">parseFloat(&quot;372.72abc&quot;);   // 372.72</div></pre></td></tr></table></figure>
+<p>null / undefined &#xB97C; &#xC81C;&#xC678;&#xD55C; &#xD0C0;&#xC785;&#xC740; <code>toString()</code> &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xD1B5;&#xD574;&#xC11C; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xBCC0;&#xD658;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name = <span class="number">372</span>;</div><div class="line">name.toString();           <span class="comment">// &quot;372&quot;</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> flag = <span class="keyword">new</span> <span class="built_in">Boolean</span>(<span class="literal">true</span>);</div><div class="line">falg.toString();           <span class="comment">// &quot;true&quot;</span></div></pre></td></tr></table></figure>
+<p>&#xBB38;&#xC790;&#xC5F4;&#xC5D0; &#xD3EC;&#xD568; &#xB41C; &#xC18C;&#xC218;&#xC810; &#xC790;&#xB9AC; &#xC218;(&#xBC18;&#xC62C;&#xB9BC;)&#xB098; &#xC9C0;&#xC218; &#xD45C;&#xAE30;&#xBC95; &#xC0AC;&#xC6A9; &#xC5EC;&#xBD80;&#xB4F1;&#xC744; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xB294; &#xBC29;&#xBC95;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name = <span class="number">372.72</span>;</div><div class="line">name.toFixed(<span class="number">0</span>);           <span class="comment">// &apos;372&apos;     </span></div><div class="line">name.toFixed(<span class="number">1</span>);           <span class="comment">// &apos;372.7&apos;   =&gt; &#xC778;&#xC790; &#xAC12;&#xC774; &#xC18C;&#xC218;&#xC810; &#xC790;&#xB9AC; &#xC218;</span></div><div class="line"></div><div class="line">name.toExponential();      <span class="comment">// &apos;3.7272e+2&apos; =&gt; &#xBD80;&#xB3D9;&#xC18C;&#xC218;&#xC810; &#xC218; &#xC9C0;&#xC218; &#xD615;&#xD0DC; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xBCC0;&#xD658;</span></div><div class="line">name.toExponential(<span class="number">2</span>);     <span class="comment">// &apos;3.72e+2&apos; =&gt; &#xC778;&#xC790; &#xAC12;&#xC774; &#xC18C;&#xC218;&#xC810; &#xC790;&#xB9AC; &#xC218;</span></div><div class="line"></div><div class="line">name.toPrecision(<span class="number">2</span>);       <span class="comment">// &apos;3.7e+2&apos; =&gt; &#xC778;&#xC790; &#xAC12;&#xC774; &#xC720;&#xD6A8; &#xC790;&#xB9AC; &#xC218;&#xB85C; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xD45C;&#xD604;</span></div><div class="line">name.toPrecision(<span class="number">1</span>);       <span class="comment">// &apos;4e+2&apos; </span></div><div class="line">name.toPrecision(<span class="number">5</span>);       <span class="comment">// &apos;372.72&apos;</span></div><div class="line">name.toPrecision(<span class="number">3</span>);       <span class="comment">// &apos;373&apos;</span></div></pre></td></tr></table></figure>
+<hr>
+
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2017-06-10T06:56:42.000Z" itemprop="datePublished">2017-06-10</time>
+
+    </span>
+    <span class="post-description-item">
+        
+
+    <span>
+        <i class="tags icon"></i>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/web/">web</a>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/javascript/">javascript</a>
+    </span>
+
+    
+
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a href="/2017/06/12/http-message-statuscodes/" class="ui tiny button">
+
+                    <i class="angle left icon"></i>
+                    
+                    HTTP | message(status codes)
+                    
+
+                </a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2017/06/09/http-message-method/" class="ui tiny button">
+                    
+                    HTTP | message(method)
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#암시적-형-변환"><span>암시적 형 변환</span></a></li><li><a href="#명시적-형-변환"><span>명시적 형 변환</span></a><ol><li><a href="#문자와-숫자-정수-실수-의-형-변환"><span>문자와 숫자(정수, 실수)의 형 변환</span></a></li></ol></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+<!-- disqus start -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+<!-- following code is copied form hexo theme Next, thanks a lot -->
+
+var disqus_shortname = '372s-github-page';
+var disqus_identifier = '2017/06/10/javascript-typeconversion/';
+var disqus_title = 'Javascript | typeconversion(형 변환)';
+
+function run_disqus_script(disqus_script) {
+	var dsq = document.createElement('script');
+	dsq.type = 'text/javascript';
+	dsq.async = true;
+	dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}
+
+run_disqus_script('count.js');
+
+
+var disqus_config = function () {
+    this.page.url = disqus_url;
+    this.page.identifier = disqus_identifier;
+    this.page.title = disqus_title;
+};
+
+run_disqus_script('embed.js');
+
+
+
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+<!-- disqus end -->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2017 <a href="/">372</a>.
+        All Rights Reserved.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>

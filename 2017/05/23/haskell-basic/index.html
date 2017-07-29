@@ -1,0 +1,428 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>Haskell(하스켈) | basic | 372 | scientific thinking</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="&amp;#xD558;&amp;#xC2A4;&amp;#xCF08; &amp;#xC124;&amp;#xCE58; &amp;#xAC00; &amp;#xB2E4; &amp;#xB418;&amp;#xC5C8;&amp;#xC73C;&amp;#xBA74; &amp;#xAE30;&amp;#xBCF8;&amp;#xC801;&amp;#xC778; &amp;#xBB38;&amp;#xBC95;&amp;#xBD80;&amp;#xD130; &amp;#xC54C;&amp;#xC544;&amp;#xBCF4;&amp;#xACA0;&amp;#xC2B5;&amp;">
+<meta name="keywords" content="haskell,functional programming">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Haskell(하스켈) | basic">
+<meta property="og:url" content="https://sc372.github.io/2017/05/23/haskell-basic/index.html">
+<meta property="og:site_name" content="372 | scientific thinking">
+<meta property="og:description" content="&amp;#xD558;&amp;#xC2A4;&amp;#xCF08; &amp;#xC124;&amp;#xCE58; &amp;#xAC00; &amp;#xB2E4; &amp;#xB418;&amp;#xC5C8;&amp;#xC73C;&amp;#xBA74; &amp;#xAE30;&amp;#xBCF8;&amp;#xC801;&amp;#xC778; &amp;#xBB38;&amp;#xBC95;&amp;#xBD80;&amp;#xD130; &amp;#xC54C;&amp;#xC544;&amp;#xBCF4;&amp;#xACA0;&amp;#xC2B5;&amp;">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-07-29T05:37:17.866Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Haskell(하스켈) | basic">
+<meta name="twitter:description" content="&amp;#xD558;&amp;#xC2A4;&amp;#xCF08; &amp;#xC124;&amp;#xCE58; &amp;#xAC00; &amp;#xB2E4; &amp;#xB418;&amp;#xC5C8;&amp;#xC73C;&amp;#xBA74; &amp;#xAE30;&amp;#xBCF8;&amp;#xC801;&amp;#xC778; &amp;#xBB38;&amp;#xBC95;&amp;#xBD80;&amp;#xD130; &amp;#xC54C;&amp;#xC544;&amp;#xBCF4;&amp;#xACA0;&amp;#xC2B5;&amp;">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "372",
+  "url": "https://sc372.github.io"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>372 | scientific thinking</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">372</a>
+                    
+                        <div class="meta">
+                            Programer / Roaster / Sienze
+                        </div>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        <div class="item">
+                            <i class="marker icon" style="float: left"></i>
+                            <div class="content">Asia/Seoul</div>
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+
+                                <a href="https://github.com/sc372"><i class="large github icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://twitter.com/lsc372"><i class="large twitter icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://about.me/sc372"><i class="large user icon" style="float: left"></i></a>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item" >
+        <i class="home icon"></i>
+        home
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/Web" class="item" >
+        <i class=" icon"></i>
+        web
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/OS" class="item" >
+        <i class=" icon"></i>
+        os
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/FunctionalProgramming" class="item" >
+        <i class=" icon"></i>
+        functional programming
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-haskell-basic" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+<h1 class="ui header">
+    
+    Haskell(하스켈) | basic
+</h1>
+
+
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <p><a href="https://sc372.github.io/2017/05/22/haskell-start/">&#xD558;&#xC2A4;&#xCF08; &#xC124;&#xCE58;</a> &#xAC00; &#xB2E4; &#xB418;&#xC5C8;&#xC73C;&#xBA74; &#xAE30;&#xBCF8;&#xC801;&#xC778; &#xBB38;&#xBC95;&#xBD80;&#xD130; &#xC54C;&#xC544;&#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xC5F0;&#xC0B0;"><a href="#&#xC5F0;&#xC0B0;" class="headerlink" title="&#xC5F0;&#xC0B0;"></a>&#xC5F0;&#xC0B0;</h2><h3 id="&#xC0B0;&#xC220;-&#xC5F0;&#xC0B0;&#xC790;"><a href="#&#xC0B0;&#xC220;-&#xC5F0;&#xC0B0;&#xC790;" class="headerlink" title="&#xC0B0;&#xC220; &#xC5F0;&#xC0B0;&#xC790;"></a>&#xC0B0;&#xC220; &#xC5F0;&#xC0B0;&#xC790;</h3><p>&#xAE30;&#xBCF8;&#xC801;&#xC778; &#xC5F0;&#xC0B0;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">ghci&gt; 8 + 20</div><div class="line">28</div><div class="line">ghci&gt; 26 - 5</div><div class="line">21</div><div class="line">ghci&gt; 14 * 6</div><div class="line">84</div><div class="line">ghci&gt; 57 / 5</div><div class="line">11.4</div><div class="line">ghci&gt; 3 ^ 2</div><div class="line">9</div></pre></td></tr></table></figure>
+<p>&#xC5EC;&#xB7EC;&#xAC1C;&#xC758; &#xC5F0;&#xC0B0;&#xC790;&#xAC00; &#xC788;&#xC744; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; &#xC5F0;&#xC0B0;&#xC790; &#xC6B0;&#xC120;&#xC21C;&#xC704;&#xC5D0; &#xC758;&#xD574;&#xC11C; &#xACC4;&#xC0B0;&#xC774; &#xB429;&#xB2C8;&#xB2E4;. &#xB610;&#xD55C; &#xAD04;&#xD638;&#xB97C; &#xD1B5;&#xD574; &#xBA85;&#xC2DC;&#xC801; &#xC6B0;&#xC120;&#xC21C;&#xC704;&#xB97C; &#xD45C;&#xD604;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">ghci&gt; 14 * 6 - 5</div><div class="line">79</div><div class="line">ghci&gt; 5 - 14 * 6 </div><div class="line">-79</div><div class="line">ghci&gt; 14 * ( 6 - 5 )</div><div class="line">14</div><div class="line"></div><div class="line">&lt;&#xC74C;&#xC218;&#xB294; &#xAD04;&#xD638; &#xC548;&#xC5D0; &#xB123;&#xC5B4; &#xD568;&gt;</div><div class="line">ghci&gt; 5 - 14 * (-6) </div><div class="line">89</div><div class="line"></div><div class="line">&lt;&#xC74C;&#xC218;&#xB97C; &#xAD04;&#xD638; &#xC548;&#xC5D0; &#xB123;&#xC9C0; &#xC54A;&#xC744; &#xACBD;&#xC6B0; &#xC624;&#xB958;&gt;</div><div class="line">ghci&gt; 5 - 14 * -6</div><div class="line">&lt;interactive&gt;:15:2: error:</div><div class="line">    Precedence parsing error</div><div class="line">        cannot mix &#x2018;*&#x2019; [infixl 7] and prefix `-<span class="string">&apos; [infixl 6] in the same infix expression</span></div></pre></td></tr></table></figure>
+<h3 id="&#xB17C;&#xB9AC;-&#xC5F0;&#xC0B0;&#xC790;"><a href="#&#xB17C;&#xB9AC;-&#xC5F0;&#xC0B0;&#xC790;" class="headerlink" title="&#xB17C;&#xB9AC; &#xC5F0;&#xC0B0;&#xC790;"></a>&#xB17C;&#xB9AC; &#xC5F0;&#xC0B0;&#xC790;</h3><p>&#xD558;&#xC2A4;&#xCF08;&#xC758; &#xBD80;&#xC6B8;&#xB300;&#xC218;&#xC758; &#xD45C;&#xD604;&#xC740; &#xB300;&#xBB38;&#xC790;&#xB85C; &#xC2DC;&#xC791;&#xD558;&#xC5EC;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">ghci&gt; True &amp;&amp; True</div><div class="line">True</div><div class="line">ghci&gt; True &amp;&amp; False</div><div class="line">False</div><div class="line">ghci&gt; False || True</div><div class="line">True</div><div class="line">ghci&gt; True || False</div><div class="line">True</div><div class="line">ghci&gt; not True</div><div class="line">False</div><div class="line">ghci&gt; not ( False || True )</div><div class="line">False</div></pre></td></tr></table></figure>
+<h3 id="&#xB3D9;&#xCE58;-&#xBE44;&#xAD50;-&#xC5F0;&#xC0B0;&#xC790;"><a href="#&#xB3D9;&#xCE58;-&#xBE44;&#xAD50;-&#xC5F0;&#xC0B0;&#xC790;" class="headerlink" title="&#xB3D9;&#xCE58; &#xBE44;&#xAD50; &#xC5F0;&#xC0B0;&#xC790;"></a>&#xB3D9;&#xCE58; &#xBE44;&#xAD50; &#xC5F0;&#xC0B0;&#xC790;</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">ghci&gt; 55 == 55</div><div class="line">True</div><div class="line">ghci&gt; 55 /= 55</div><div class="line">False</div><div class="line">ghci&gt; <span class="string">&quot;372&quot;</span> == <span class="string">&quot;372&quot;</span></div><div class="line">True</div><div class="line">ghci&gt; <span class="string">&quot;372&quot;</span> == <span class="string">&quot;3723&quot;</span></div><div class="line">False</div><div class="line"></div><div class="line">&lt;&#xB3D9;&#xC77C;&#xD55C; &#xD0C0;&#xC785;&#xC774; &#xC544;&#xB2D0; &#xACBD;&#xC6B0; &#xC624;&#xB958;&gt;</div><div class="line">ghci&gt; <span class="string">&quot;372&quot;</span> == 372</div><div class="line"></div><div class="line">&lt;interactive&gt;:33:11: error:</div><div class="line">    &#x2022; No instance <span class="keyword">for</span> (Num [Char]) arising from the literal &#x2018;372&#x2019;</div><div class="line">    &#x2022; In the second argument of &#x2018;(==)&#x2019;, namely &#x2018;372&#x2019;</div><div class="line">      In the expression: <span class="string">&quot;372&quot;</span> == 372</div><div class="line">      In an equation <span class="keyword">for</span> &#x2018;it&#x2019;: it = <span class="string">&quot;372&quot;</span> == 372</div></pre></td></tr></table></figure>
+<h2 id="&#xD568;&#xC218;-&#xD638;&#xCD9C;"><a href="#&#xD568;&#xC218;-&#xD638;&#xCD9C;" class="headerlink" title="&#xD568;&#xC218; &#xD638;&#xCD9C;"></a>&#xD568;&#xC218; &#xD638;&#xCD9C;</h2><p>&#xD558;&#xC2A4;&#xCF08;&#xC5D0;&#xC11C; &#xBAA8;&#xB4E0; &#xAC83;&#xC740; &#xD568;&#xC218;&#xC785;&#xB2C8;&#xB2E4;. <code>+</code> &#xC5F0;&#xC0B0;&#xC790;&#xB3C4; &#xD568;&#xC218;&#xC785;&#xB2C8;&#xB2E4;. </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ghci&gt; 3 + 2</div><div class="line">5</div></pre></td></tr></table></figure>
+<p>&#xC774;&#xB807;&#xAC8C; &#xB300;&#xC0C1; &#xC911;&#xAC04;&#xC5D0; &#xB450;&#xB294; &#xD568;&#xC218;&#xB97C; &#xC911;&#xC704;&#xD568;&#xC218;(infix function) &#xC774;&#xB77C;&#xACE0; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC911;&#xC704;&#xD568;&#xC218; &#xC678;&#xC5D0; &#xC8FC;&#xB85C; &#xC0AC;&#xC6A9;&#xB418;&#xB294; &#xD568;&#xC218;&#xC758; &#xD638;&#xCD9C; &#xBC29;&#xC2DD;&#xC740; &#xC804;&#xC704;&#xD568;&#xC218;(prefix function) &#xC785;&#xB2C8;&#xB2E4;. &#xC804;&#xC704;&#xD568;&#xC218;&#xB294; <code>&#xD568;&#xC218;&#xC774;&#xB984; &#xACF5;&#xBC31; &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;</code> &#xC758; &#xD615;&#xD0DC;&#xB85C; &#xD638;&#xCD9C; &#xB429;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ghci&gt; succ 3</div><div class="line">4</div><div class="line">*succ &#xD568;&#xC218;&#xB294; &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;&#xB97C; &#xBC1B;&#xC544;&#xC11C; &#xC99D;&#xAC00;&#xB41C; &#xAC12;&#xC744; &#xBC18;&#xD658;.</div></pre></td></tr></table></figure>
+<p>&#xC5EC;&#xB824;&#xAC1C;&#xC758; &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;&#xB97C; &#xBC1B;&#xB294; &#xD568;&#xC218;&#xB97C; &#xD638;&#xCD9C;&#xD558;&#xB294; &#xBC29;&#xC2DD;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ghci&gt; max 3 9</div><div class="line">9</div><div class="line">ghci&gt; min 3 9</div><div class="line">3</div></pre></td></tr></table></figure>
+<p>&#xD568;&#xC218;&#xAC00; &#xC5F0;&#xC0B0;&#xC790; &#xBCF4;&#xB2E4; &#xC6B0;&#xC120; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">ghci&gt; 3 + min 3 9</div><div class="line">6</div><div class="line">ghci&gt; max 3 9 + 3</div><div class="line">12</div><div class="line">ghci&gt; (max 3 9) + 3</div><div class="line">12</div><div class="line"></div><div class="line">&lt;&#xAD04;&#xD638; &#xC548;&#xC5D0; &#xB123;&#xC740; &#xACBD;&#xC6B0;&gt;</div><div class="line">ghci&gt; succ 3 * 6</div><div class="line">24</div><div class="line">ghci&gt; succ (3 * 6)</div><div class="line">19</div><div class="line"></div><div class="line">&lt;&#xB9E4;&#xAC1C;&#xBCC0;&#xC218;&#xC758; &#xC21C;&#xC11C;&#xC5D0; &#xB530;&#xB77C; &#xD63C;&#xB780;&#xC774; &#xC62C; &#xC218; &#xC788;&#xB294; &#xACBD;&#xC6B0;&#xC758; &#xD45C;&#xD604;&gt;</div><div class="line">ghci&gt; div 4 2</div><div class="line">2</div><div class="line">ghci&gt; 4 `div` 2</div><div class="line">2</div></pre></td></tr></table></figure>
+<h3 id="&#xD568;&#xC218;-&#xC815;&#xC758;"><a href="#&#xD568;&#xC218;-&#xC815;&#xC758;" class="headerlink" title="&#xD568;&#xC218; &#xC815;&#xC758;"></a>&#xD568;&#xC218; &#xC815;&#xC758;</h3><p>ex.hs &#xD30C;&#xC77C;&#xC744; &#xB9CC;&#xB4E4;&#xACE0; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xD568;&#xC218;&#xB97C; &#xC815;&#xC758;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">double a = a + a</div></pre></td></tr></table></figure>
+<p>REPL &#xC5D0;&#xC11C; &#xD568;&#xC218;&#xB97C; &#xC815;&#xC758;&#xD558;&#xACE0; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ghci&gt;:l ex</div><div class="line">[1 of 1] Compiling Main             ( ex.hs, interpreted )</div><div class="line">Ok, modules loaded: Main.</div><div class="line">ghci&gt; double 4</div><div class="line">8</div></pre></td></tr></table></figure></p>
+<p>ex.hs &#xC5D0; &#xB2E4;&#xC74C; &#xD568;&#xC218;&#xB97C; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">add a b = a + b</div><div class="line">doubledouble a b = double a + double b</div></pre></td></tr></table></figure>
+<p>&#xB2E4;&#xC2DC; &#xC815;&#xC758;&#xD558;&#xACE0; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">ghci&gt;:l ex</div><div class="line">[1 of 1] Compiling Main             ( ex.hs, interpreted )</div><div class="line">Ok, modules loaded: Main.</div><div class="line">ghci&gt;add 3 5</div><div class="line">8</div><div class="line">ghci&gt;doubledouble 3 5</div><div class="line">16</div></pre></td></tr></table></figure>
+<p>&#xB2E4;&#xC74C;&#xC740; &#xD568;&#xC218;&#xB0B4;&#xC5D0;&#xC11C; <code>if</code> &#xB97C; &#xC0AC;&#xC6A9;&#xD574; &#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB2E4;&#xC74C; &#xD568;&#xC218;&#xB97C; &#xCD94;&#xAC00;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">time a = <span class="keyword">if</span> a &gt; 12</div><div class="line">            <span class="keyword">then</span> a</div><div class="line">            <span class="keyword">else</span> a - 12</div></pre></td></tr></table></figure>
+<p>&#xB2E4;&#xC74C; &#xD568;&#xC218;&#xB294; 24&#xC2DC;&#xAC04; &#xD45C;&#xD604;&#xC758; &#xC2DC;&#xAC04; &#xC785;&#xB825;&#xD558;&#xBA74; 12&#xC2DC; &#xD45C;&#xD604;&#xC73C;&#xB85C; &#xBC14;&#xAFD4;&#xC8FC;&#xB294; &#xD568;&#xC218;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p>&#xD558;&#xC2A4;&#xCF08;&#xC5D0;&#xC11C;&#xC758; <code>if</code> &#xB294; &#xB2E8;&#xB3C5;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC5C6;&#xACE0; <code>if-then-else</code> &#xD45C;&#xD604;&#xC758; &#xAF2C;&#xB9AC; &#xC21C;&#xD658;(tail recursion)&#xC774;&#xB77C;&#xACE0; &#xD558;&#xB294; <strong>&#xD45C;&#xD604;&#xC2DD;</strong> &#xC785;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xB9AC;&#xC2A4;&#xD2B8;-list"><a href="#&#xB9AC;&#xC2A4;&#xD2B8;-list" class="headerlink" title="&#xB9AC;&#xC2A4;&#xD2B8;(list)"></a>&#xB9AC;&#xC2A4;&#xD2B8;(list)</h2><p>&#xB9AC;&#xC2A4;&#xD2B8;&#xB294; &#xAC19;&#xC740; &#xD0C0;&#xC785;&#xC758; &#xBB36;&#xC74C;&#xC785;&#xB2C8;&#xB2E4;. <code>[]</code> &#xB85C; &#xAC10;&#xC2F8;&#xC838; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">ghci&gt; <span class="built_in">let</span> randomNum = [2,9,8,7,3,4]</div><div class="line">ghci&gt; randomNum </div><div class="line">[2,9,8,7,3,4]</div><div class="line"></div><div class="line">&lt;&#xD0C0;&#xC785; &#xCCB4;&#xD06C;&gt;</div><div class="line">ghci&gt; :t randomNum</div><div class="line">randomNum :: Num t =&gt; [t]</div><div class="line"></div><div class="line">* <span class="built_in">let</span> &#xD0A4;&#xC6CC;&#xB4DC;&#xB294; &#xD568;&#xC218;&#xB97C; &#xC815;&#xC758;&#xD558;&#xB294; &#xAC83;&#xC744; &#xC758;&#xBBF8; =&gt; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC5D0; &#xC815;&#xC758;&#xD558;&#xACE0; :l &#xB85C;&#xB4DC;&#xD558;&#xB294; &#xAC83;&#xACFC; &#xAC19;&#xC740; &#xC758;&#xBBF8;</div></pre></td></tr></table></figure>
+<p><code>++</code> <code>:</code> &#xB97C; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xC5F0;&#xACB0;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">ghci&gt; [2,4,8,3,1] ++ [34,52,4,9]</div><div class="line">[2,4,8,3,1,34,52,4,9]</div><div class="line">ghci&gt; (++) [2,4,8,3,1] [34,52,4,9]</div><div class="line">[2,4,8,3,1,34,52,4,9]</div><div class="line"></div><div class="line">ghci&gt; <span class="string">&quot;372&quot;</span> ++ <span class="string">&quot; &quot;</span> ++ <span class="string">&quot;world&quot;</span></div><div class="line"><span class="string">&quot;372 world&quot;</span></div><div class="line"></div><div class="line">* &#xBB38;&#xC790;&#xC5F4;&#xC740; &#xBB38;&#xC790;&#xB4E4;&#xC758; &#xB9AC;&#xC2A4;&#xD2B8; &#xC774;&#xBBC0;&#xB85C; &#xAC00;&#xB2A5;</div><div class="line"></div><div class="line"></div><div class="line">&lt;&#xB2E8;&#xC77C;&#xD56D;&#xBAA9;&#xACFC; &#xB9AC;&#xC2A4;&#xD2B8;&#xC640;&#xC758; &#xC5F0;&#xACB0;&#xC740; : &#xB97C; &#xC0AC;&#xC6A9;&gt;</div><div class="line">ghci&gt; 3:[5,7,20]</div><div class="line">[3,5,7,20]</div><div class="line">ghci&gt; (:) 3 [5,7,20]</div><div class="line">[3,5,7,20]</div><div class="line"></div><div class="line">ghci&gt; 3:10:104:[5,7,20]</div><div class="line">[3,10,104,5,7,20]</div></pre></td></tr></table></figure>
+<p>&#xB9AC;&#xC2A4;&#xD2B8;&#xC758; &#xD55C; &#xD56D;&#xBAA9;&#xC744; &#xC870;&#xD68C;&#xD558;&#xB824;&#xBA74; <code>!!</code> &#xB97C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">ghci&gt; [3,10,389,34,5,77] !! 2</div><div class="line">389</div><div class="line">ghci&gt; (!!) [3,10,389,34,5,77] 2</div><div class="line">389</div><div class="line"></div><div class="line">ghci&gt; <span class="string">&quot;372 world&quot;</span> !! 8</div><div class="line"><span class="string">&apos;d&apos;</span></div></pre></td></tr></table></figure>
+<p>&#xB9AC;&#xC2A4;&#xD2B8; &#xB07C;&#xB9AC; &#xBE44;&#xAD50;&#xC5F0;&#xC0B0;&#xC744; &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xBE44;&#xAD50;&#xD560; &#xACBD;&#xC6B0; &#xD55C;&#xBAA9; &#xC21C;&#xC11C;&#xB300;&#xB85C; &#xBE44;&#xAD50;&#xD558;&#xC5EC; &#xAC12;&#xC774; &#xAC19;&#xC740; &#xD56D;&#xBAA9;&#xC740; &#xB118;&#xC5B4;&#xAC00;&#xACE0; &#xAC12;&#xC774; &#xB2E4;&#xB978; &#xD56D;&#xBAA9;&#xC774; &#xB098;&#xC624;&#xBA74; &#xBE44;&#xAD50;&#xC5F0;&#xC0B0;&#xC744; &#xC218;&#xD589;&#xD569;&#xB2C8;&#xB2E4;. </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">ghci&gt; [1,2,3] == [1,2,3]</div><div class="line">True</div><div class="line">ghci&gt; (==) [1,2,3] [1,2,3]</div><div class="line">True</div><div class="line">ghci&gt; [2,2,3] == [1,2,3]</div><div class="line">False</div><div class="line">ghci&gt; [2,2,3] &gt; [1,2,3]</div><div class="line">True</div><div class="line">ghci&gt; [2,2,3] &gt;= [1,2,3]</div><div class="line">True</div><div class="line">ghci&gt; [1,2,3] &gt;= [1,2,3]</div><div class="line">True</div><div class="line">ghci&gt; [1,2,3] == [1,2]</div><div class="line">False</div><div class="line">ghci&gt; [1,2,3] &gt;= [1,2]</div><div class="line">True</div><div class="line">ghci&gt; [1,2,3] &gt; [1,2]</div><div class="line">True</div></pre></td></tr></table></figure>
+<p>&#xB9AC;&#xC2A4;&#xD2B8; &#xC548;&#xC5D0; &#xAC19;&#xC740; &#xD0C0;&#xC785;&#xC758; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xD56D;&#xBAA9;&#xC73C;&#xB85C; &#xB458; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ghci&gt; [[1,2,3], [4,5,6], [7,8,9]]</div><div class="line">[[1,2,3],[4,5,6],[7,8,9]]</div><div class="line">ghci&gt; list ++ [[11,22,33]]</div><div class="line">[[1,2,3],[4,5,6],[7,8,9],[11,22,33]]</div><div class="line">ghci&gt; [44,55,66] : list</div><div class="line">[[44,55,66],[1,2,3],[4,5,6],[7,8,9]]</div></pre></td></tr></table></figure>
+<p>&#xCD94;&#xAC00;&#xB85C; &#xB9AC;&#xC2A4;&#xD2B8;&#xC5D0; &#xAD00;&#xB828;&#xB41C; &#xD568;&#xC218;&#xB4E4;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">ghci&gt; head [0,1,2,3,4,5,6,7,8,9,10]     =&gt; &#xAC00;&#xC7A5; &#xCCAB; &#xD56D;&#xBAA9; &#xD558;&#xB098;&#xB97C; &#xBC18;&#xD658; </div><div class="line">0</div><div class="line">ghci&gt; last [0,1,2,3,4,5,6,7,8,9,10]     =&gt; &#xAC00;&#xC7A5; &#xB9C8;&#xC9C0;&#xB9C9; &#xD56D;&#xBAA9; &#xD558;&#xB098;&#xB97C; &#xBC18;&#xD658; </div><div class="line">10</div><div class="line">ghci&gt; tail [0,1,2,3,4,5,6,7,8,9,10]     =&gt; &#xAC00;&#xC7A5; &#xCCAB; &#xD56D;&#xBAA9;&#xC744; &#xBE7C;&#xACE0; &#xB098;&#xBA38;&#xC9C0;&#xB97C; &#xBC18;&#xD658;</div><div class="line">[1,2,3,4,5,6,7,8,9,10]&#xD658;</div><div class="line">ghci&gt; init [0,1,2,3,4,5,6,7,8,9,10]     =&gt; &#xAC00;&#xC7A5; &#xB9C8;&#xC9C0;&#xB9C9; &#xD56D;&#xBAA9;&#xC744; &#xBE7C;&#xACE0; &#xB098;&#xBA38;&#xC9C0;&#xB97C; &#xBC18;&#xD658;</div><div class="line">[0,1,2,3,4,5,6,7,8,9]</div><div class="line">ghci&gt; length [0,1,2,3,4,5,6,7,8,9,10]   =&gt; &#xD56D;&#xBAA9;&#xC758; &#xCD1D; &#xAC2F;&#xC218;&#xB97C; &#xBC18;&#xD658;</div><div class="line">11</div><div class="line">ghci&gt; reverse [0,1,2,3,4,5,6,7,8,9,10]  =&gt; &#xC5ED;&#xC21C;&#xC73C;&#xB85C; &#xBC14;&#xAFB8;&#xACE0; &#xBC18;&#xD658;</div><div class="line">[10,9,8,7,6,5,4,3,2,1,0]</div><div class="line">ghci&gt; null [0,1,2,3,4,5,6,7,8,9,10]     =&gt; &#xB9AC;&#xC2A4;&#xD2B8;&#xC758; &#xD56D;&#xBAA9;&#xC758; &#xC720;&#xBB34; &#xD655;&#xC778;</div><div class="line">False</div><div class="line">ghci&gt; take 5 [0,1,2,3,4,5,6,7,8,9,10]   =&gt; &#xB9AC;&#xC2A4;&#xD2B8; &#xCCAB; &#xD56D;&#xBAA9;&#xBD80;&#xD130; 5(&#xB9E4;&#xAC1C;&#xBCC0;&#xC218;) &#xAE4C;&#xC9C0;&#xC758; &#xD56D;&#xBAA9;&#xC744; &#xBC18;&#xD658;</div><div class="line">[0,1,2,3,4]</div><div class="line">ghci&gt; drop 5 [0,1,2,3,4,5,6,7,8,9,10]   =&gt; &#xB9AC;&#xC2A4;&#xD2B8; &#xCCAB; &#xD56D;&#xBAA9;&#xBD80;&#xD130; 5(&#xB9E4;&#xAC1C;&#xBCC0;&#xC218;) &#xAE4C;&#xC9C0;&#xC758; &#xD56D;&#xBAA9;&#xC744; &#xBC84;&#xB9AC;&#xACE0; &#xBC18;&#xD658;   </div><div class="line">[5,6,7,8,9,10]</div><div class="line">ghci&gt; maximum [0,1,2,3,4,5,6,7,8,9,10]   =&gt; &#xB9AC;&#xC2A4;&#xD2B8; &#xC911; &#xAC00;&#xC7A5; &#xD070; &#xC218; &#xBC18;&#xD658;</div><div class="line">10</div><div class="line">ghci&gt; minimum [0,1,2,3,4,5,6,7,8,9,10]   =&gt; &#xB9AC;&#xC2A4;&#xD2B8; &#xC911; &#xAC00;&#xC7A5; &#xC791;&#xC740; &#xC218; &#xBC18;&#xD658;</div><div class="line">0</div><div class="line">ghci&gt; sum [1,2,3,4,5,6,7,8,9,10]         =&gt; &#xB9AC;&#xC2A4;&#xD2B8; &#xC804;&#xCCB4; &#xC218;&#xB97C; &#xB354;&#xD55C; &#xAC12; &#xBC18;&#xD658;</div><div class="line">55</div><div class="line">ghci&gt; product [1,2,3,4,5,6,7,8,9,10]     =&gt; &#xB9AC;&#xC2A4;&#xD2B8; &#xC804;&#xCCB4; &#xC218;&#xB97C; &#xACF1;&#xD55C; &#xAC12; &#xBC18;&#xD658;</div><div class="line">3628800</div><div class="line">ghci&gt; elem 4 [0,1,2,3,4,5,6,7,8,9,10]    =&gt; &#xB9AC;&#xC2A4;&#xD2B8; &#xC804;&#xCCB4; &#xD56D;&#xBAA9; &#xC911; 4(&#xB9E4;&#xAC1C;&#xBCC0;&#xC218;) &#xC720;&#xBB34; &#xD655;&#xC778;</div><div class="line">True</div><div class="line">ghci&gt; 4 `elem` [0,1,2,3,4,5,6,7,8,9,10]  =&gt; &#xC911;&#xC704;&#xD568;&#xC218;&#xB85C; &#xD45C;&#xD604;&#xD558;&#xBA74; &#xAC00;&#xB3C5;&#xC131;&#xC774; &#xB354; &#xB192;&#xC744; &#xC218; &#xC788;&#xC74C;</div><div class="line">True</div><div class="line"></div><div class="line">&lt;&#xD568;&#xC218;&#xC5D0; &#xD568;&#xC218;&#xB97C; &#xC801;&#xC6A9;&gt;</div><div class="line">ghci&gt; take 15 (cycle [3,7,2])</div><div class="line">[3,7,2,3,7,2,3,7,2,3,7,2,3,7,2]</div><div class="line">ghci&gt; take 5 (cycle [<span class="string">&quot;372 world&quot;</span>])</div><div class="line">[<span class="string">&quot;372 world&quot;</span>,<span class="string">&quot;372 world&quot;</span>,<span class="string">&quot;372 world&quot;</span>,<span class="string">&quot;372 world&quot;</span>,<span class="string">&quot;372 world&quot;</span>]</div></pre></td></tr></table></figure>
+<h3 id="&#xB808;&#xC778;&#xC9C0;-ranges"><a href="#&#xB808;&#xC778;&#xC9C0;-ranges" class="headerlink" title="&#xB808;&#xC778;&#xC9C0;(ranges)"></a>&#xB808;&#xC778;&#xC9C0;(ranges)</h3><p>&#xD558;&#xC2A4;&#xCF08;&#xC740; &#xBC18;&#xBCF5;&#xB418;&#xB294; &#xD328;&#xD134;&#xC774; &#xC788;&#xB294; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xAC04;&#xB2E8;&#xD788; &#xD45C;&#xD604;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">ghci&gt; [1,2,3,4,5,6,7,8,9,10]</div><div class="line">[1,2,3,4,5,6,7,8,9,10]</div><div class="line">ghci&gt; [1..10]</div><div class="line">[1,2,3,4,5,6,7,8,9,10]</div><div class="line">ghci&gt; [<span class="string">&apos;a&apos;</span>..<span class="string">&apos;z&apos;</span>]</div><div class="line"><span class="string">&quot;abcdefghijklmnopqrstuvwxyz&quot;</span></div><div class="line">ghci&gt; [<span class="string">&apos;A&apos;</span>..<span class="string">&apos;Z&apos;</span>]</div><div class="line"><span class="string">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;</span></div><div class="line"></div><div class="line">&lt;&#xAC04;&#xACA9;&#xC774; &#xBC18;&#xBCF5;&#xB418;&#xB294; &#xB9AC;&#xC2A4;&#xD2B8;&gt;</div><div class="line">ghci&gt; [1,3..20]</div><div class="line">[1,3,5,7,9,11,13,15,17,19]</div><div class="line">ghci&gt; [<span class="string">&apos;a&apos;</span>,<span class="string">&apos;c&apos;</span>..<span class="string">&apos;z&apos;</span>]</div><div class="line"><span class="string">&quot;acegikmoqsuwy&quot;</span></div><div class="line">ghci&gt; [1,4..50]</div><div class="line">[1,4,7,10,13,16,19,22,25,28,31,34,37,40,43,46,49]</div><div class="line"></div><div class="line">&lt;&#xBB34;&#xD55C;&#xC758; &#xAC12;&#xC758; &#xB9AC;&#xC2A4;&#xD2B8;&gt;</div><div class="line">ghci&gt; [1,2..]   =&gt; &#xB05D;&#xB098;&#xC9C0; &#xC54A;&#xC74C; : &#xBE60;&#xC838; &#xB098;&#xC624;&#xAE30; (ctrl+<span class="built_in">shift</span>+c) </div><div class="line"></div><div class="line">&lt;&#xBB34;&#xD55C; &#xB9AC;&#xC2A4;&#xD2B8;&#xC5D0; &#xD568;&#xC218;&#xB97C; &#xC801;&#xC6A9;&gt;</div><div class="line">ghci&gt; take 4 [1,7..] </div><div class="line">[1,7,13,19]</div><div class="line">ghci&gt; replicate 5 3</div><div class="line">[3,3,3,3,3]</div><div class="line"></div><div class="line">&lt;&#xBD80;&#xB3D9;&#xC18C;&#xC218;&#xC810; &#xC218;&#xC5D0; &#xB300;&#xD55C; &#xC8FC;&#xC758;&gt;</div><div class="line">ghci&gt;[0.1, 0.4 .. 2.0]</div><div class="line">[0.1,0.4,0.7000000000000001,1.0,1.2999999999999998,1.5999999999999996,1.8999999999999995]</div><div class="line">=&gt; &#xBD80;&#xB3D9;&#xC18C;&#xC218;&#xC810; &#xC218;&#xB294; &#xC720;&#xD55C;&#xD55C; &#xC815;&#xBC00;&#xB3C4;&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC6D0;&#xD558;&#xC9C0; &#xC54A;&#xB294; &#xAC12;&#xC774; &#xB098;&#xC62C; &#xC218;&#xB3C4; &#xC788;&#xB2E4;</div></pre></td></tr></table></figure>
+<h3 id="&#xB9AC;&#xC2A4;&#xD2B8;-a"><a href="#&#xB9AC;&#xC2A4;&#xD2B8;-a" class="headerlink" title="&#xB9AC;&#xC2A4;&#xD2B8; +a"></a>&#xB9AC;&#xC2A4;&#xD2B8; +a</h3><p>&#xB9AC;&#xC2A4;&#xD2B8;&#xC5D0; &#xC218;&#xD559;&#xC801; &#xD45C;&#xD604;&#xC744; &#xB098;&#xD0C0;&#xB0BC; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC218;&#xD559;&#xC758; &#xC9D1;&#xD569;&#xB860; &#xC911; <a href="https://ko.wikipedia.org/wiki/%EC%A1%B0%EA%B1%B4%EC%A0%9C%EC%8B%9C%EB%B2%95" target="_blank" rel="external">&#xC870;&#xAC74;&#xC81C;&#xC2DC;&#xBC95;</a> &#xACFC; &#xBE44;&#xC2B7;&#xD55C;&#xB370; &#xD55C;&#xAC00;&#xC9C0; &#xC608;&#xB97C; &#xB4E4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<blockquote>
+<p><em>{ 3 &#xB7; x|x &#x2208; N, x &#x2264; 30 }</em></p>
+</blockquote>
+<p>&#xC704; &#xD45C;&#xD604;&#xC740; <strong>&#x2018;30&#xBCF4;&#xB2E4; &#xC791;&#xAC70;&#xB098; &#xAC19;&#xC740; &#xBAA8;&#xB4E0; &#xC790;&#xC5F0;&#xC218;&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xAC01;&#xAC01;&#xC758; &#xAC12;&#xC5D0; 3&#xC744; &#xACF1;&#xD55C; &#xAC12;&#xB4E4;&#xC758; &#xC9D1;&#xD569;&#x2019;</strong>&#xC785;&#xB2C8;&#xB2E4;.<br>&#xD558;&#xC2A4;&#xCF08;&#xC5D0;&#xC11C;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xD45C;&#xAE30; &#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ghci&gt; [x*3 | x &lt;- [1..30]]</div><div class="line">[3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,66,69,72,75,78,81,84,87,90]</div></pre></td></tr></table></figure>
+<p>&#xC870;&#xAC74;&#xC744; &#xCD94;&#xAC00;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC704; &#xB9AC;&#xC2A4;&#xD2B8;&#xC5D0;&#xC11C; <strong>&#x2018;50 &#xC774;&#xD558;&#xC758; &#xC6D0;&#xC18C;&#xB9CC; &#xD3EC;&#xD568;&#x2019;</strong>&#x2018; &#xC758; &#xC870;&#xAC74;&#xC740; &#xB123;&#xC5B4;&#xBCF4;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; <code>,</code> &#xC774;&#xD6C4;&#xB85C; &#xC870;&#xAC74;&#xC744; &#xB123;&#xC744; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ghci&gt; [x*3 | x &lt;- [1..30], x*3 &lt;= 50]</div><div class="line">[3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48]</div><div class="line"></div><div class="line">&lt;&#xB354; &#xB9CE;&#xC740; &#xC870;&#xAC74;&#xC744; &#xB123;&#xC744; &#xACBD;&#xC6B0;&gt;</div><div class="line">ghci&gt; [x*3 | x &lt;- [1..30], x*3 &lt;= 50, even x]   =&gt; &#xC9DD;&#xC218;&#xC758; &#xAC12;&#xB9CC;&#xC744; &#xAC00;&#xC9C8; &#xC870;&#xAC74;.</div><div class="line">[6,12,18,24,30,36,42,48]</div></pre></td></tr></table></figure>
+<p>20 &#xC774;&#xD558;&#xC758; &#xD640;&#xC218;&#xC640; &#xC9DD;&#xC218;&#xC758; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xAD6C;&#xD574;&#xBD05;&#xC2DC;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ghci&gt; [ x | x &lt;- [1..20], odd x ]</div><div class="line">[1,3,5,7,9,11,13,15,17,19]</div><div class="line">ghci&gt; [ x | x &lt;- [1..20], even x ]</div><div class="line">[2,4,6,8,10,12,14,16,18,20]</div></pre></td></tr></table></figure>
+<p>&#xC9DD;&#xC218;&#xC758; &#xC815;&#xC218;&#xC5D0;&#xC11C; 20 &#xC774;&#xD558;&#xC758; &#xC218;&#xB294; &#x201C;down&#x201D;, 20 &#xC774;&#xC0C1;&#xC758; &#xC218;&#xB294; &#x201C;up&#x201D; &#xC774;&#xB77C;&#xACE0; &#xD45C;&#xD604;&#xD558;&#xB77C;&#xB294; &#xD568;&#xC218; <code>evenNums</code> &#xB97C; &#xC815;&#xC758;&#xD558;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ghci&gt; <span class="built_in">let</span> evenNums xs = [ <span class="keyword">if</span> x &lt; 20 <span class="keyword">then</span> <span class="string">&quot;down&quot;</span> <span class="keyword">else</span> <span class="string">&quot;up&quot;</span> | x &lt;- xs, even x ]</div><div class="line">ghci&gt; evenNums [ 14..27 ]</div><div class="line">[<span class="string">&quot;down&quot;</span>,<span class="string">&quot;down&quot;</span>,<span class="string">&quot;down&quot;</span>,<span class="string">&quot;up&quot;</span>,<span class="string">&quot;up&quot;</span>,<span class="string">&quot;up&quot;</span>,<span class="string">&quot;up&quot;</span>]</div></pre></td></tr></table></figure>
+<p>&#xB9AC;&#xC2A4;&#xD2B8;&#xC640; &#xB9AC;&#xC2A4;&#xD2B8;&#xC758; &#xC5F0;&#xC0B0;&#xACB0;&#xACFC;&#xB85C; &#xC0C8;&#xB85C;&#xC6B4; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xB9CC;&#xB4E4;&#xC5B4;&#xB0B4;&#xB294; &#xC608;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ghci&gt;[ x + y | x &lt;- [1..10], y &lt;- [2,4]]</div><div class="line">[3,5,4,6,5,7,6,8,7,9,8,10,9,11,10,12,11,13,12,14]</div></pre></td></tr></table></figure>
+<p>&#xD558;&#xC2A4;&#xCF08;&#xC740; &#xD568;&#xC218;&#xC758; &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;&#xC5D0; &#xB300;&#xC751;&#xB418;&#xB294; &#xD45C;&#xD604;&#xC744; <code>_</code>(&#xBC11;&#xC904;)&#xC744; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.<br>&#xB2E4;&#xC74C;&#xC740; length &#xD568;&#xC218;&#xB97C; &#xAD6C;&#xD604;&#xD574; &#xB193;&#xC740; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ghci&gt; <span class="built_in">let</span> leng x = sum [1 | _ &lt;- x ]</div><div class="line">ghci&gt; leng [1,2,3,4]</div><div class="line">4</div></pre></td></tr></table></figure>
+<h3 id="&#xD29C;&#xD50C;-tuple"><a href="#&#xD29C;&#xD50C;-tuple" class="headerlink" title="&#xD29C;&#xD50C;(tuple)"></a>&#xD29C;&#xD50C;(tuple)</h3><p>&#xD29C;&#xD50C;&#xC740; &#xB9AC;&#xC2A4;&#xD2B8;&#xC640; &#xBE44;&#xC2B7;&#xD569;&#xB2C8;&#xB2E4;&#xB9CC;, &#xC5EC;&#xB7EC; &#xD0C0;&#xC785;&#xC774; &#xD3EC;&#xD568;&#xB420; &#xC218; &#xC788;&#xACE0; &#xC815;&#xD574;&#xC9C4; &#xAC1C;&#xC218;&#xB9CC; &#xAC00;&#xC9C8; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.<br>&#xB9AC;&#xC2A4;&#xD2B8;&#xC640; &#xB2EC;&#xB9AC; &#xD29C;&#xD50C;&#xC740; <code>()</code> &#xB97C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ghci&gt; (1,2,<span class="string">&quot;world&quot;</span>,True)</div><div class="line">(1,2,<span class="string">&quot;world&quot;</span>,True)</div></pre></td></tr></table></figure>
+<p>&#xB9AC;&#xC2A4;&#xD2B8;&#xB294; &#xD06C;&#xAE30;&#xAC00; &#xB2E4;&#xB978; &#xAC83;&#xC740; &#xC0C1;&#xAD00; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;&#xB9CC;, &#xD29C;&#xD50C;&#xC740; &#xD06C;&#xAE30;&#xAC00; &#xB2E4;&#xB978; &#xAC83;&#xC740; &#xB2E4;&#xB978; &#xD0C0;&#xC785;&#xC774;&#xB77C;&#xACE0; &#xC5EC;&#xACA8;&#xC9D1;&#xB2C8;&#xB2E4;.<br>&#xC774;&#xB85C; &#xC778;&#xD574;&#xC11C; &#xB9AC;&#xC2A4;&#xD2B8;&#xB294; &#xD06C;&#xAE30;&#xAC00; &#xB2E4;&#xB978; &#xAC83;&#xC740; &#xBE44;&#xAD50;&#xD560; &#xC218; &#xC788;&#xC9C0;&#xB9CC; &#xD29C;&#xD50C;&#xC740; &#xD06C;&#xAE30;&#xAC00; &#xB2E4;&#xB978; &#xAC83;&#xC740; &#xBE44;&#xAD50;&#xD560; &#xC218; &#xC5C6;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><em>(2&#xAC1C;&#xC758; &#xC6D0;&#xC18C;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC9C4; &#xD29C;&#xD50C;(pair), 3&#xAC1C;&#xC758; &#xC6D0;&#xC18C;&#xB85C; &#xC774;&#xB8E8;&#xC5B4;&#xC9C4; &#xD29C;&#xD50C;(triple) &#xC774;&#xB77C;&#xACE0; &#xD569;&#xB2C8;&#xB2E4;.)</em>  </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">ghci&gt; [[1,2,3], [4,5,6], [7,8,9,0]]</div><div class="line">[[1,2,3],[4,5,6],[7,8,9,0]]</div><div class="line">ghci&gt; [(1,2,3), (4,5,6), (7,8,9,0)]</div><div class="line"></div><div class="line">&lt;interactive&gt;:20:21: error:</div><div class="line">    &#x2022; Couldn<span class="string">&apos;t match expected type &#x2018;(t2, t1, t)&#x2019;</span></div><div class="line"><span class="string">                  with actual type &#x2018;(Integer, Integer, Integer, Integer)&#x2019;</span></div><div class="line"><span class="string">    &#x2022; In the expression: (7, 8, 9, 0)</span></div><div class="line"><span class="string">      In the expression: [(1, 2, 3), (4, 5, 6), (7, 8, 9, 0)]</span></div><div class="line"><span class="string">      In an equation for &#x2018;it&#x2019;: it = [(1, 2, 3), (4, 5, 6), (7, 8, 9, 0)]</span></div><div class="line"><span class="string">    &#x2022; Relevant bindings include</span></div><div class="line"><span class="string">        it :: [(t2, t1, t)] (bound at &lt;interactive&gt;:20:2)</span></div><div class="line"><span class="string">ghci&gt; [(1,2,3), (4,5,6), (7,8,9)]</span></div><div class="line"><span class="string">[(1,2,3),(4,5,6),(7,8,9)]</span></div></pre></td></tr></table></figure>
+<p>&#xD398;&#xC5B4;(pair)&#xB97C; &#xC774;&#xC6A9;&#xD55C; &#xC720;&#xC6A9;&#xD55C; &#xD568;&#xC218;&#xB4E4;&#xC774; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">ghci&gt; fst (372, <span class="string">&quot;world&quot;</span>)    =&gt; &#xCCAB;&#xBC88;&#xC9F8; &#xAC12;&#xC744; &#xB9AC;&#xD134;&#xD569;&#xB2C8;&#xB2E4;.</div><div class="line">372</div><div class="line">ghci&gt; snd (372, <span class="string">&quot;world&quot;</span>)    =&gt; &#xB450;&#xBC88;&#xC9F8; &#xAC12;&#xC744; &#xB9AC;&#xD134;&#xD569;&#xB2C8;&#xB2E4;.</div><div class="line"><span class="string">&quot;world&quot;</span></div><div class="line"></div><div class="line">&lt;zip &#xD568;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD574;&#xC11C; &#xB450;&#xAC1C;&#xC758; &#xB9AC;&#xC2A4;&#xD2B8;&#xB85C; &#xD398;&#xC5B4;&#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xB9CC;&#xB4EC;&gt;</div><div class="line">ghci&gt; zip [1,2,3,4,5] [101,102,103,104,105]</div><div class="line">[(1,101),(2,102),(3,103),(4,104),(5,105)]</div><div class="line">ghci&gt; zip [1..] [<span class="string">&quot;a&quot;</span>, <span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>, <span class="string">&quot;d&quot;</span>]</div><div class="line">[(1,<span class="string">&quot;a&quot;</span>),(2,<span class="string">&quot;b&quot;</span>),(3,<span class="string">&quot;c&quot;</span>),(4,<span class="string">&quot;d&quot;</span>)]</div></pre></td></tr></table></figure>
+<p>&#xD29C;&#xD50C;&#xACFC; &#xB9AC;&#xC2A4;&#xD2B8;&#xB85C; &#xBB38;&#xC81C;&#xB97C; &#xD558;&#xB098; &#xD480;&#xC5B4;&#xBCF4;&#xB3C4;&#xB85D; &#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.<br><a href="https://ko.wikipedia.org/wiki/%ED%94%BC%ED%83%80%EA%B3%A0%EB%9D%BC%EC%8A%A4%EC%9D%98_%EC%A0%95%EB%A6%AC" target="_blank" rel="external">&#xD53C;&#xD0C0;&#xACE0;&#xB77C;&#xC2A4; &#xC815;&#xB9AC;</a>&#xB97C; &#xC774;&#xC6A9;&#xD558;&#xC5EC; &#xC9C1;&#xAC01;&#xC0BC;&#xAC01;&#xD615; &#xAC01; &#xBCC0;&#xC758; &#xD06C;&#xAE30;&#xB97C; &#xC815;&#xD558;&#xB294; &#xBB38;&#xC81C;&#xC785;&#xB2C8;&#xB2E4;.</p>
+<p><em>&#xC870;&#xAC74; : &#xBAA8;&#xB4E0; &#xBCC0;&#xC758; &#xAC12;&#xC740; &#xC815;&#xC218;, &#xBAA8;&#xB4E0; &#xBCC0;&#xC758; &#xAC12; 10 &#xC774;&#xD558;, &#xBAA8;&#xB4E0; &#xBCC0;&#xC758; &#xD569;&#xC740; 24</em></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt; &#xBAA8;&#xB4E0; &#xBCC0;&#xC740; 10&#xC774;&#xD558; &gt;</div><div class="line">ghci&gt;<span class="built_in">let</span> sizes = [ (a,b,c) | c &lt;- [1..10], a &lt;- [1..10], b &lt;- [1..10] ]</div><div class="line"></div><div class="line">&lt; &#xD53C;&#xD0C0;&#xACE0;&#xB77C;&#xC2A4; &#xACF5;&#xC2DD; &#xC870;&#xAC74;&#xC744; &#xCD94;&#xAC00; &gt;</div><div class="line">ghci&gt;<span class="built_in">let</span> pythagorean = [ (a,b,c) | c &lt;- [1..10], a &lt;- [1..c], b &lt;- [1..a], a^2 + b^2 == c^2 ]</div><div class="line"></div><div class="line">&lt; &#xBAA8;&#xB4E0; &#xBCC0;&#xC758; &#xD569;=24 &#xC870;&#xAC74;&#xC744; &#xCD94;&#xAC00;&gt;</div><div class="line">ghci&gt;<span class="built_in">let</span> triangles = [ (a,b,c) | c &lt;- [1..10], a &lt;- [1..c], b &lt;- [1..a], a^2 + b^2 == c^2, a+b+c ==24 ]</div><div class="line">ghci&gt;triangles</div><div class="line">[(8,6,10)]</div></pre></td></tr></table></figure>
+<hr>
+<p><strong> &#xD558;&#xC2A4;&#xCF08; &#xBB38;&#xBC95;&#xC758; &#xAE30;&#xBCF8;&#xC801;&#xC778; &#xB0B4;&#xC6A9;&#xC744; &#xD6D3;&#xC5B4; &#xBD24;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC790;&#xBC14;&#xB97C; &#xBC30;&#xC6B8;&#xB54C;&#xC640;&#xB294; &#xC870;&#xAE08; &#xB2E4;&#xB978; &#xB290;&#xB08C;&#xC73C;&#xB85C; &#xCF54;&#xB529;&#xD558;&#xB294; &#xAC83;&#xC740; &#xBA85;&#xD655;&#xD558;&#xAC8C; &#xB290;&#xAEF4;&#xC9D1;&#xB2C8;&#xB2E4;. &#xD55C; &#xC5B8;&#xC5B4;&#xC758; &#xD328;&#xB7EC;&#xB2E4;&#xC784;&#xC5D0; &#xADC0;&#xC18D;&#xB418;&#xC9C0; &#xC54A;&#xACE0; &#xB2E4;&#xC591;&#xD55C; &#xD328;&#xB7EC;&#xB2E4;&#xC784;&#xC744; &#xACBD;&#xD5D8;&#xD560; &#xC218; &#xC788;&#xB294; &#xC88B;&#xC740; &#xD559;&#xC2B5;&#xC774; &#xB420; &#xAC83; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</strong></p>
+
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2017-05-23T05:16:28.000Z" itemprop="datePublished">2017-05-23</time>
+
+    </span>
+    <span class="post-description-item">
+        
+
+    <span>
+        <i class="tags icon"></i>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/haskell/">haskell</a>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/functional-programming/">functional programming</a>
+    </span>
+
+    
+
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a href="/2017/05/26/portfolio-ttuburgi/" class="ui tiny button">
+
+                    <i class="angle left icon"></i>
+                    
+                    Android App | ttuburgi
+                    
+
+                </a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2017/05/22/haskell-start/" class="ui tiny button">
+                    
+                    Haskell(하스켈) | start
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#연산"><span>연산</span></a><ol><li><a href="#산술-연산자"><span>산술 연산자</span></a></li><li><a href="#논리-연산자"><span>논리 연산자</span></a></li><li><a href="#동치-비교-연산자"><span>동치 비교 연산자</span></a></li></ol></li><li><a href="#함수-호출"><span>함수 호출</span></a><ol><li><a href="#함수-정의"><span>함수 정의</span></a></li></ol></li><li><a href="#리스트-list"><span>리스트(list)</span></a><ol><li><a href="#레인지-ranges"><span>레인지(ranges)</span></a></li><li><a href="#리스트-a"><span>리스트 +a</span></a></li><li><a href="#튜플-tuple"><span>튜플(tuple)</span></a></li></ol></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+<!-- disqus start -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+<!-- following code is copied form hexo theme Next, thanks a lot -->
+
+var disqus_shortname = '372s-github-page';
+var disqus_identifier = '2017/05/23/haskell-basic/';
+var disqus_title = 'Haskell(하스켈) | basic';
+
+function run_disqus_script(disqus_script) {
+	var dsq = document.createElement('script');
+	dsq.type = 'text/javascript';
+	dsq.async = true;
+	dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}
+
+run_disqus_script('count.js');
+
+
+var disqus_config = function () {
+    this.page.url = disqus_url;
+    this.page.identifier = disqus_identifier;
+    this.page.title = disqus_title;
+};
+
+run_disqus_script('embed.js');
+
+
+
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+<!-- disqus end -->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2017 <a href="/">372</a>.
+        All Rights Reserved.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>

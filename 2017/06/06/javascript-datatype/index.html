@@ -1,0 +1,421 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <title>Javascript | datatype | 372 | scientific thinking</title>
+
+    <!-- Open Graph -->
+    <meta name="description" content="&amp;#xBAA8;&amp;#xB4E0; &amp;#xC5B8;&amp;#xC5B4;&amp;#xB294; &amp;#xD65C;&amp;#xC6A9;&amp;#xD560; &amp;#xB370;&amp;#xC774;&amp;#xD130;&amp;#xC758; &amp;#xC790;&amp;#xB8CC;&amp;#xD615;(data type) &amp;#xC744; &amp;#xAC00;&amp;#xC9C0;&amp;#xACE0; &amp;#xC788;&amp;#xC2B5;&amp;#xB2C8;&amp;#xB2E">
+<meta name="keywords" content="web,javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Javascript | datatype">
+<meta property="og:url" content="https://sc372.github.io/2017/06/06/javascript-datatype/index.html">
+<meta property="og:site_name" content="372 | scientific thinking">
+<meta property="og:description" content="&amp;#xBAA8;&amp;#xB4E0; &amp;#xC5B8;&amp;#xC5B4;&amp;#xB294; &amp;#xD65C;&amp;#xC6A9;&amp;#xD560; &amp;#xB370;&amp;#xC774;&amp;#xD130;&amp;#xC758; &amp;#xC790;&amp;#xB8CC;&amp;#xD615;(data type) &amp;#xC744; &amp;#xAC00;&amp;#xC9C0;&amp;#xACE0; &amp;#xC788;&amp;#xC2B5;&amp;#xB2C8;&amp;#xB2E">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://sc372.github.io/2017/06/06/javascript-datatype/datatype.png">
+<meta property="og:updated_time" content="2017-07-29T05:37:17.870Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Javascript | datatype">
+<meta name="twitter:description" content="&amp;#xBAA8;&amp;#xB4E0; &amp;#xC5B8;&amp;#xC5B4;&amp;#xB294; &amp;#xD65C;&amp;#xC6A9;&amp;#xD560; &amp;#xB370;&amp;#xC774;&amp;#xD130;&amp;#xC758; &amp;#xC790;&amp;#xB8CC;&amp;#xD615;(data type) &amp;#xC744; &amp;#xAC00;&amp;#xC9C0;&amp;#xACE0; &amp;#xC788;&amp;#xC2B5;&amp;#xB2C8;&amp;#xB2E">
+<meta name="twitter:image" content="https://sc372.github.io/2017/06/06/javascript-datatype/datatype.png">
+
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "email": "mailto:",
+  "image": "",
+  "name": "372",
+  "url": "https://sc372.github.io"
+}
+</script>
+    <script>
+    var algoliaEnabled = false;
+    
+</script>
+
+    
+
+    
+    
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    
+    
+    
+        <!-- stylesheets list from config.yml -->
+        
+        <link rel="stylesheet" href="/css/aloha.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+        
+        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
+        
+    
+
+</head>
+<body id="body" style="margin-bottom: 0;" class="pushable">
+
+    <div class="ui top fixed menu">
+        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
+    </div>
+
+    <div id="menu-sidebar" class="ui left vertical sidebar menu">
+
+    <div id="sidebar-top">
+        <div class="content">
+            <h3>372 | scientific thinking</h3>
+        </div>
+    </div>
+    <div class="ui container sidebar-card">
+    <div class="ui people shape content">
+        <div class="active side">
+            <div class="ui card">
+                <div class="image">
+                    <img class="ui medium bordered image" src="/images/avatar.jpg">
+                </div>
+                <div class="content">
+                    <a class="header">372</a>
+                    
+                        <div class="meta">
+                            Programer / Roaster / Sienze
+                        </div>
+                    
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+                        <div class="item">
+                            <i class="marker icon" style="float: left"></i>
+                            <div class="content">Asia/Seoul</div>
+                        </div>
+                        
+                        
+                    </div>
+
+                </div>
+                <div class="extra content">
+                    <div class="ui list">
+                        
+
+                                <a href="https://github.com/sc372"><i class="large github icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://twitter.com/lsc372"><i class="large twitter icon" style="float: left"></i></a>
+
+                            
+
+                                <a href="https://about.me/sc372"><i class="large user icon" style="float: left"></i></a>
+
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    
+    
+
+    
+
+    
+    <a href="/index.html" class="item" >
+        <i class="home icon"></i>
+        home
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/Web" class="item" >
+        <i class=" icon"></i>
+        web
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/OS" class="item" >
+        <i class=" icon"></i>
+        os
+    </a>
+
+    
+    
+
+    
+
+    
+    <a href="/categories/FunctionalProgramming" class="item" >
+        <i class=" icon"></i>
+        functional programming
+    </a>
+
+    
+
+    
+</div>
+
+    <div class="pusher body-content">
+        <div id="content" class="ui main container">
+            <!--<div class="ui one column grid">-->
+                <!--<div class="column">-->
+                    <!--<div class="ui main container">-->
+                        <div id="post-javascript-datatype" class="ui main container article-type-post">
+
+    
+
+    <div class="ui divided grid">
+
+        <div class="two column row" id="article-content">
+
+            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+                
+
+<h1 class="ui header">
+    
+    Javascript | datatype
+</h1>
+
+
+
+                <div class="article-inner">
+
+                    <div class="article-entry" itemprop="articleBody">
+                        
+                        <p>&#xBAA8;&#xB4E0; &#xC5B8;&#xC5B4;&#xB294; &#xD65C;&#xC6A9;&#xD560; &#xB370;&#xC774;&#xD130;&#xC758; &#xC790;&#xB8CC;&#xD615;(data type) &#xC744; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xAC00; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xB294; &#xB370;&#xC774;&#xD130;&#xC758; &#xD615;&#xC2DD;&#xC774; &#xC5B4;&#xB5BB;&#xAC8C; &#xAD6C;&#xC131;&#xB418;&#xC5B4; &#xC788;&#xB294;&#xC9C0; &#xC0B4;&#xD3B4; &#xBCF4;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p><a class="magnific-img" href="datatype.png"><img src="datatype.png" alt="" class="ui centered image"></a></p>
+<h2 id="&#xC6D0;&#xC2DC;-&#xD0C0;&#xC785;-primitive-type"><a href="#&#xC6D0;&#xC2DC;-&#xD0C0;&#xC785;-primitive-type" class="headerlink" title="&#xC6D0;&#xC2DC; &#xD0C0;&#xC785;(primitive type)"></a>&#xC6D0;&#xC2DC; &#xD0C0;&#xC785;(primitive type)</h2><h3 id="&#xC22B;&#xC790;-number"><a href="#&#xC22B;&#xC790;-number" class="headerlink" title="&#xC22B;&#xC790;(number)"></a>&#xC22B;&#xC790;(number)</h3><ul class="ui list">
+<li>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC758; &#xC22B;&#xC790;&#xB294; &#xC815;&#xC218;&#xC640; &#xC2E4;&#xC218;&#xC758; &#xAD6C;&#xBD84;&#xC774; &#xC5C6;&#xC74C;</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">372</div><div class="line">372.3</div></pre></td></tr></table></figure>
+<ul class="ui list">
+<li><p>&#xD45C;&#xD604; &#xAC00;&#xB2A5; &#xBC94;&#xC704;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-9007199254740992(-2^53) ~ 9007199254740992(2^53)</div></pre></td></tr></table></figure>
+</li>
+<li><p>10&#xC9C4;&#xC218;, 16&#xC9C4;&#xC218; &#xC815;&#xC218; &#xAC12;&#xC744; &#xC778;&#xC2DD;&#xD569;&#xB2C8;&#xB2E4;.(8&#xC9C4;&#xC218;&#xB294; &#xD5C8;&#xC6A9; &#xAC00;&#xB2A5;&#xD558;&#xC9C0;&#xB9CC; ECMAScript5&#xC758; &#xC5C4;&#xACA9; &#xBAA8;&#xB4DC;&#xC5D0;&#xC11C;&#xB294; &#xAE08;&#xC9C0;)</p>
+</li>
+<li><p>&#xBD80;&#xB3D9;&#xC18C;&#xC218;&#xC810;&#xC73C;&#xB85C; &#xC2E4;&#xC218;&#xB97C; &#xD45C;&#xD604; &#xD569;&#xB2C8;&#xB2E4;.</p>
+</li>
+<li><p>&#xAE30;&#xBCF8;&#xC801;&#xC778; &#xC0AC;&#xCE59;&#xC5F0;&#xC0B0; <code>+, -, *, /</code>&#xACFC; <code>&#xB098;&#xBA38;&#xC9C0;(%)</code> &#xC5F0;&#xC0B0;&#xC774; &#xAC00;&#xB2A5; &#xD569;&#xB2C8;&#xB2E4;.( <code>&#xAD04;&#xD638;()</code>&#xB97C; &#xD1B5;&#xD574; &#xC6B0;&#xC120; &#xC21C;&#xC704;&#xB97C; &#xC9C0;&#xC815;&#xD560; &#xC218; &#xC788;&#xC74C;)</p>
+</li>
+<li><p>&#xD45C;&#xD604; &#xAC00;&#xB2A5; &#xBC94;&#xC704;&#xB97C; &#xB118;&#xC5C8;&#xC744; &#xACBD;&#xC6B0;(overflow) =&gt; infinity (or -infinity) &#xCD9C;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.</p>
+</li>
+<li><p>&#xD45C;&#xD604;&#xD560; &#xC218; &#xC788;&#xB294; &#xAC00;&#xC7A5; &#xC791;&#xC740; &#xAC12;&#xBCF4;&#xB2E4; 0&#xC5D0; &#xAC00;&#xAE4C;&#xC6B8; &#xB54C;(underflow) =&gt; 0 (or -0) &#xCD9C;&#xB825;&#xD569;&#xB2C8;&#xB2E4;.</p>
+</li>
+<li><p>&#xC815;&#xC0C1;&#xC801;&#xC778; &#xAC12;&#xC744; &#xC5BB;&#xC9C0; &#xBABB;&#xD560; &#xB54C; <code>NaN</code> &#xB97C; &#xCD9C;&#xB825;&#xD569;&#xB2C8;&#xB2E4;. (<code>isNaN()</code> &#xD568;&#xC218;&#xB97C; &#xD1B5;&#xD574; &#xD655;&#xC778; &#xAC00;&#xB2A5;)</p>
+</li>
+</ul>
+<h3 id="&#xBB38;&#xC790;&#xC5F4;-string"><a href="#&#xBB38;&#xC790;&#xC5F4;-string" class="headerlink" title="&#xBB38;&#xC790;&#xC5F4;(string)"></a>&#xBB38;&#xC790;&#xC5F4;(string)</h3><ul class="ui list">
+<li><p>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB294; <code>&#xC720;&#xB2C8;&#xCF54;&#xB4DC;</code> &#xBB38;&#xC790;&#xC5F4; &#xC9D1;&#xD569;&#xC73C;&#xB85C; <code>UTF-16</code> &#xC744; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</p>
+</li>
+<li><p>&#xD558;&#xB098;&#xC758; &#xBB38;&#xC790;&#xB97C; &#xC704;&#xD55C; &#xD0C0;&#xC785;&#xC740; &#xC874;&#xC7AC;&#xD558;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</li>
+<li><p>&#xD558;&#xB098;&#xC758; &#xBB38;&#xC790;&#xB3C4; 16&#xBE44;&#xD2B8; &#xC720;&#xB2C8;&#xCF54;&#xB4DC;&#xC758; &#xAE38;&#xC774; 1&#xC758; &#xBB38;&#xC790;&#xC5F4; &#xC785;&#xB2C8;&#xB2E4;.</p>
+</li>
+<li><p>&#xBB38;&#xC790;&#xC5F4; &#xD45C;&#xAE30;&#xB294; <code>&quot;&quot;</code>, <code>&apos;&apos;</code> &#xC548;&#xC5D0; &#xBB38;&#xC790;&#xB97C; &#xB123;&#xC2B5;&#xB2C8;&#xB2E4;.(<code>&quot;&quot;</code> &#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC774; &#xAD8C;&#xC7A5; &#xB429;&#xB2C8;&#xB2E4;.)</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&quot;&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;&quot;</div><div class="line">&apos;&#xC548;&#xB155;&#xD558;&#xC138;&#xC694;&apos;</div><div class="line"></div><div class="line">&lt;&#xBB38;&#xC790;&#xC5F4; &#xB0B4;&#xBD80;&#xC5D0; &apos;&apos;,&quot;&quot; &#xB123;&#xAE30;&gt;  </div><div class="line">&quot;&#xC81C; &#xC774;&#xB984;&#xC740; &apos;372&apos; &#xC785;&#xB2C8;&#xB2E4;&quot;</div><div class="line">&apos;&#xC81C; &#xC774;&#xB984;&#xC740; &quot;372&quot; &#xC785;&#xB2C8;&#xB2E4;&apos;</div></pre></td></tr></table></figure>
+<ul class="ui list">
+<li><p>&#xBC30;&#xC5F4;&#xACFC; &#xAC19;&#xC9C0; &#xC54A;&#xC9C0;&#xB9CC;  &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xC778; <code>lenth</code> &#xACFC; <code>indexOf()</code>, <code>concat()</code> &#xB4F1;&#xC758; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xC218;&#xD589;&#xD560; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+</li>
+<li><p>&#xBB38;&#xC790;&#xC5F4;&#xC740; &#xBCC0;&#xACBD;&#xB418;&#xC9C0; &#xC54A;&#xACE0; &#xBA54;&#xC11C;&#xB4DC; &#xC218;&#xD589; &#xC774;&#xD6C4; &#xC0C8;&#xB85C;&#xC6B4; &#xAC12;&#xC774; &#xC0DD;&#xC131; &#xB429;&#xB2C8;&#xB2E4;.</p>
+</li>
+</ul>
+<h3 id="&#xBD80;&#xC6B8;&#xB9B0;-boolean"><a href="#&#xBD80;&#xC6B8;&#xB9B0;-boolean" class="headerlink" title="&#xBD80;&#xC6B8;&#xB9B0;(boolean)"></a>&#xBD80;&#xC6B8;&#xB9B0;(boolean)</h3><ul class="ui list">
+<li>&#xCC38;(true) / &#xAC70;&#xC9D3;(false) &#xAC12;&#xC73C;&#xB85C; &#xB9AC;&#xD134;&#xB418;&#xB294; &#xAC12;&#xC73C;&#xB85C; &#xBCF4;&#xD1B5; &#xAC12;&#xC744; &#xBE44;&#xAD50;&#xD558;&#xC5EC; &#xC0DD;&#xC131;&#xB429;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">372 == &quot;&#xC0BC;&#xCE58;&#xB9AC;&quot;</div><div class="line">false</div></pre></td></tr></table></figure>
+<ul class="ui list">
+<li>AND &#xC5F0;&#xC0B0; <code>&amp;&amp;</code>, OR &#xC5F0;&#xC0B0; <code>||</code> &#xC774; &#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<h3 id="null-undefined"><a href="#null-undefined" class="headerlink" title="null / undefined"></a>null / undefined</h3><ul class="ui list">
+<li><p>null : &#xAC12;&#xC774; &#xC5C6;&#xC744; &#xB54C; &#xB9AC;&#xD134; &#xB429;&#xB2C8;&#xB2E4;. (<code>nil</code> &#xB85C; &#xD45C;&#xAE30; &#xAC00;&#xB2A5;)</p>
+</li>
+<li><p>undefined : &#xAC12;&#xC774; &#xC5C6;&#xC744; &#xB54C; &#xB9AC;&#xD134; &#xB418;&#xB294; &#xAC83;&#xC73C;&#xB85C;&#xB294; null &#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;&#xB9CC; &#xCD08;&#xAE30;&#xD654; &#xB418;&#xC5B4;&#xC788;&#xC9C0; &#xC54A;&#xC740; &#xBCC0;&#xC218;,&#xB9CC; &#xC874;&#xC7AC;&#xD558;&#xC9C0; &#xC54A;&#xB294; &#xAC1D;&#xCCB4; &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB098; &#xBC30;&#xC5F4;&#xC758; &#xC6D0;&#xC18C; &#xB97C; &#xD638;&#xCD9C; &#xD560; &#xB54C; &#xB098;&#xD0C0;&#xB0A9;&#xB2C8;&#xB2E4;.</p>
+<p>&#xC77D;&#xAE30; &#xC804;&#xC6A9;&#xC73C;&#xB85C;&#xC11C; &#xD0C0;&#xC785;&#xC774;&#xBA74;&#xC11C; &#xAC12;&#xC785;&#xB2C8;&#xB2E4;.</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">null == undefined </div><div class="line">true</div><div class="line"></div><div class="line">null === undefined </div><div class="line">false</div></pre></td></tr></table></figure>
+<ul class="ui list">
+<li>&#xC5B4;&#xB5A0;&#xD55C; &#xBA54;&#xC11C;&#xB4DC;&#xB098; &#xD504;&#xB85C;&#xD37C;&#xD2F0;&#xB97C; &#xAC00;&#xC9C0;&#xACE0; &#xC788;&#xC9C0; &#xC54A;&#xC2B5;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<h2 id="&#xAC1D;&#xCCB4;-&#xD0C0;&#xC785;-object-type"><a href="#&#xAC1D;&#xCCB4;-&#xD0C0;&#xC785;-object-type" class="headerlink" title="&#xAC1D;&#xCCB4; &#xD0C0;&#xC785;(object type)"></a>&#xAC1D;&#xCCB4; &#xD0C0;&#xC785;(object type)</h2><p>&#xC6D0;&#xC2DC; &#xD0C0;&#xC785; &#xC678; <code>&#xBC30;&#xC5F4;(array)</code>,<code>&#xD568;&#xC218;(function)</code>, <code>&#xC815;&#xADDC; &#xD45C;&#xD604;&#xC2DD;(regExp)</code> &#xC740; &#xBAA8;&#xB450; &#xAC1D;&#xCCB4; &#xC785;&#xB2C8;&#xB2E4;. &#xC774; &#xB0B4;&#xC6A9;&#xC740; &#xD55C; &#xD3EC;&#xC2A4;&#xD305;&#xC73C;&#xB85C; &#xB2F4;&#xAE30;&#xC5D0;&#xB294; &#xB0B4;&#xC6A9;&#xC774; &#xB9CE;&#xC73C;&#xBBC0;&#xB85C; &#xD6C4;&#xC5D0; &#xB530;&#xB85C; &#xB2E4;&#xB8E8;&#xAE30;&#xB85C; &#xD569;&#xB2C8;&#xB2E4;.</p>
+<hr>
+<p><strong>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC758; &#xB370;&#xC774;&#xD130;&#xD0C0;&#xC785;&#xC758; &#xAD6C;&#xC131;&#xC744; &#xC54C;&#xC544;&#xBCF4;&#xC558;&#xC2B5;&#xB2C8;&#xB2E4;. &#xB2E4;&#xB978; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xC5B8;&#xC5B4;&#xD558;&#xACE0; &#xBE44;&#xAD50;&#xD558;&#xBA74; &#xB370;&#xC774;&#xD130;&#xD0C0;&#xC785;&#xC758; &#xC885;&#xB958;&#xB3C4; &#xC801;&#xACE0; &#xD0C0;&#xC785;&#xC2DC;&#xC2A4;&#xD15C;&#xB3C4; &#xC57D;&#xD55C; &#xD3B8;&#xC785;&#xB2C8;&#xB2E4;&#xB9CC; &#xD0C0;&#xC785;&#xC758; &#xAD6C;&#xC131;&#xC744; &#xC798; &#xD30C;&#xC545;&#xD558;&#xACE0; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D; &#xD574;&#xC57C;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</strong></p>
+
+                        
+                    </div>
+
+                    
+                    
+                    
+
+                    <div class="description post-description">
+    <span class="post-description-item">
+        <time datetime="2017-06-06T02:01:20.000Z" itemprop="datePublished">2017-06-06</time>
+
+    </span>
+    <span class="post-description-item">
+        
+
+    <span>
+        <i class="tags icon"></i>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/web/">web</a>
+    </span>
+
+    
+    <span class="ui tiny label">
+        <a href="/tags/javascript/">javascript</a>
+    </span>
+
+    
+
+    </span>
+</div>
+
+                </div>
+                
+                <div id="pagination" class="nav-web ui text container pagination">
+
+    <div class="ui stackable two column divided grid container">
+        <div class="row">
+            <div class="column nav-left">
+                
+
+                <a href="/2017/06/07/http-message-basic/" class="ui tiny button">
+
+                    <i class="angle left icon"></i>
+                    
+                    HTTP | message(basic)
+                    
+
+                </a>
+
+                
+            </div>
+            <div class="column nav-right">
+                
+
+                <a href="/2017/06/04/http-resource/" class="ui tiny button">
+                    
+                    HTTP | resource
+                    
+                    <i class="angle right icon"></i></a>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+                
+            </div>
+
+            
+            <div class="three wide computer three wide tablet column">
+
+                <div class="ui sticky article-toc" id="article-toc">
+                    <!-- toc -->
+                    <ol class="ui ordered list"><li><a href="#원시-타입-primitive-type"><span>원시 타입(primitive type)</span></a><ol><li><a href="#숫자-number"><span>숫자(number)</span></a></li><li><a href="#문자열-string"><span>문자열(string)</span></a></li><li><a href="#부울린-boolean"><span>부울린(boolean)</span></a></li><li><a href="#null-undefined"><span>null / undefined</span></a></li></ol></li><li><a href="#객체-타입-object-type"><span>객체 타입(object type)</span></a></li></ol>
+                </div>
+
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+<!-- disqus start -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+<!-- following code is copied form hexo theme Next, thanks a lot -->
+
+var disqus_shortname = '372s-github-page';
+var disqus_identifier = '2017/06/06/javascript-datatype/';
+var disqus_title = 'Javascript | datatype';
+
+function run_disqus_script(disqus_script) {
+	var dsq = document.createElement('script');
+	dsq.type = 'text/javascript';
+	dsq.async = true;
+	dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}
+
+run_disqus_script('count.js');
+
+
+var disqus_config = function () {
+    this.page.url = disqus_url;
+    this.page.identifier = disqus_identifier;
+    this.page.title = disqus_title;
+};
+
+run_disqus_script('embed.js');
+
+
+
+
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+<!-- disqus end -->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <div class="ui vertical footer segment">
+    <div class="ui center aligned container">
+        <div class="ui inverted section divider"></div>
+        &copy; 2017 <a href="/">372</a>.
+        All Rights Reserved.
+    </div>
+</div>
+
+    </div>
+
+
+
+
+<!-- scripts list from theme config.yml -->
+
+<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+
+<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
+
+<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
+
+<script src="/js/semantic-ui-algolia.js"></script>
+
+<script src="/js/aloha-events.js"></script>
+
+
+
+</body>
+</html>
