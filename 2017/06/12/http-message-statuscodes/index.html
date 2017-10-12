@@ -37,6 +37,13 @@
     <script>
     var algoliaEnabled = false;
     
+        var algolia = {
+            'applicationID': 'V91RP6D89F',
+            'apiKey': '9786c112adcf32a400dfa3f56160af14',
+            'indexName': 'sc372'
+        };
+        algoliaEnabled = true;
+    
 </script>
 
     
@@ -56,6 +63,9 @@
         <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
         
     
+
+  <script src="/https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js" async></script>
+  <meta property="algolia:search" data-application-id="V91RP6D89F" data-api-key="9786c112adcf32a400dfa3f56160af14" data-index-name="sc372">
 
 </head>
 <body id="body" style="margin-bottom: 0;" class="pushable">
@@ -139,6 +149,17 @@
     
 
     
+    <a href="/categories/MyWorks" class="item" >
+        <i class=" icon"></i>
+        my works
+    </a>
+
+    
+    
+
+    
+
+    
     <a href="/categories/Web" class="item" >
         <i class=" icon"></i>
         web
@@ -167,6 +188,15 @@
     </a>
 
     
+
+    
+
+    <div class="ui search item">
+        <div class="ui transparent icon input">
+            <input id="search-input" type="text" placeholder="Search">
+            <i class="search link icon"></i>
+        </div>
+    </div>
 
     
 </div>
@@ -394,6 +424,24 @@ run_disqus_script('embed.js');
     </div>
 
 
+    <div class="ui small long scrolling modal" id="search-modal">
+    <div class="header">
+        <div class="ui fluid icon input">
+            <input type="text" id="search-box" placeholder="Search everything you need...">
+            <i class="search icon"></i>
+        </div>
+    </div>
+    <div class="image content">
+        <div class="description">
+            <div class="algolia-logo">
+                Powered by <img class="ui avatar image" src="/images/algolia_logo.svg">
+            </div>
+            <div id="search-results" class="ui relaxed divided list">
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 <!-- scripts list from theme config.yml -->
@@ -409,7 +457,6 @@ run_disqus_script('embed.js');
 <script src="/js/semantic-ui-algolia.js"></script>
 
 <script src="/js/aloha-events.js"></script>
-
 
 
 </body>
